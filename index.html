@@ -149,6 +149,8 @@
   </style>
   <!-- Include SheetJS library from CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <!-- Include js-yaml library from CDN for YAML parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -169,6 +171,8 @@
 
     <div class="navigation">
       <button id="prev-btn" class="nav-btn">← Previous</button>
+      <!-- Dropdown inserted between the navigation buttons -->
+      <select id="csv-select" class="nav-btn"></select>
       <button id="next-btn" class="nav-btn">Next →</button>
     </div>
   </div>
@@ -178,6 +182,8 @@
       let currentDate;
       let quotes = [];
       let selectedDay = 1;
+      let initialized = false;
+      let currentFile = 'quotes.csv';
       
       // Timezone handling
       try {
@@ -191,36 +197,86 @@
       const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
       const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   
-      // Specify the filename. Change to 'quotes.xlsx' if you wish to use XLSX.
-      const fileName = 'quotes.csv';
+      // Function to load quotes data from the specified CSV file
+      function loadQuotes(fileName) {
+        fetch(fileName)
+          .then(response => {
+            if (fileName.endsWith('.csv')) {
+              return response.text();
+            } else {
+              return response.arrayBuffer();
+            }
+          })
+          .then(data => {
+            let workbook;
+            if (typeof data === 'string') {
+              workbook = XLSX.read(data, { type: 'string' });
+            } else {
+              workbook = XLSX.read(data, { type: 'array' });
+            }
+            const firstSheetName = workbook.SheetNames[0];
+            const worksheet = workbook.Sheets[firstSheetName];
+            // Convert the first sheet to JSON. Ensure that missing cells get a default value.
+            quotes = XLSX.utils.sheet_to_json(worksheet, { defval: '' });
+            if (!initialized) {
+              initialize();
+              initialized = true;
+            } else {
+              updateDisplay();
+            }
+          })
+          .catch(error => console.error('Error loading quotes:', error));
+      }
   
-      // Load quotes data from the file (CSV or XLSX)
-      fetch(fileName)
-        .then(response => {
-          if (fileName.endsWith('.csv')) {
-            return response.text();
-          } else {
-            return response.arrayBuffer();
-          }
-        })
-        .then(data => {
-          let workbook;
-          if (typeof data === 'string') {
-            workbook = XLSX.read(data, { type: 'string' });
-          } else {
-            workbook = XLSX.read(data, { type: 'array' });
-          }
-          const firstSheetName = workbook.SheetNames[0];
-          const worksheet = workbook.Sheets[firstSheetName];
-          // Convert the first sheet to JSON. Ensure that missing cells get a default value.
-          quotes = XLSX.utils.sheet_to_json(worksheet, { defval: '' });
-          initialize();
-        })
-        .catch(error => console.error('Error loading quotes:', error));
+      // Populate the dropdown using a YAML configuration file
+      function populateDropdownFromYAML() {
+        fetch('csv_files.yaml')
+          .then(response => {
+            if (response.ok) return response.text();
+            else throw new Error('Unable to fetch YAML configuration.');
+          })
+          .then(text => {
+            const config = jsyaml.load(text);
+            if (config && config.csvFiles && Array.isArray(config.csvFiles)) {
+              updateDropdown(config.csvFiles);
+            } else {
+              updateDropdown(['quotes.csv']);
+            }
+          })
+          .catch(err => {
+            // Fallback to default if YAML file cannot be loaded
+            updateDropdown(['quotes.csv']);
+          });
+      }
+  
+      // Update dropdown options with the provided file list
+      function updateDropdown(fileList) {
+        const dropdown = document.getElementById('csv-select');
+        dropdown.innerHTML = '';
+        fileList.forEach(file => {
+          const option = document.createElement('option');
+          option.value = file;
+          option.textContent = file.replace('.csv', '');
+          dropdown.appendChild(option);
+        });
+        // Set default to 'quotes.csv' if available, otherwise first option
+        if (fileList.includes('quotes.csv')) {
+          dropdown.value = 'quotes.csv';
+        } else {
+          dropdown.value = fileList[0];
+        }
+        currentFile = dropdown.value;
+      }
+  
+      // Dropdown change event to load the selected CSV file
+      document.getElementById('csv-select').addEventListener('change', function() {
+        currentFile = this.value;
+        loadQuotes(currentFile);
+      });
   
       function initialize() {
         const year = currentDate.getFullYear();
-        const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+        const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
         
         // Calculate day of year based on current date
         const start = new Date(year, 0, 0);
@@ -295,6 +351,10 @@
         const oneDay = 1000 * 60 * 60 * 24;
         return Math.floor(diff / oneDay);
       }
+  
+      // Start by populating dropdown from YAML configuration and loading default quotes file
+      populateDropdownFromYAML();
+      loadQuotes(currentFile);
     });
   </script>
 </body>
