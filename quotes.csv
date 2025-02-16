@@ -1,367 +1,232 @@
-No,Chinese,English,Author_CL,Author_EL
-1,千里之行，始于足下,"A journey of a thousand miles begins with a single step.",老子,Laozi
-2,知之者不如好之者，好之者不如乐之者,"Those who know are not as good as those who love, and those who love are not as good as those who find joy in it.",孔子,Confucius
-3,学而不思则罔，思而不学则殆,"Learning without thought is labor lost; thought without learning is perilous.",孔子,Confucius
-4,君子坦荡荡，小人长戚戚,"The superior man is always calm and at ease; the inferior man is always worried and distressed.",孔子,Confucius
-5,天行健，君子以自强不息,"As Heaven keeps vigor through movement, a gentleman should constantly strive for self-improvement.",周易,I Ching
-6,德不孤，必有邻,"Virtue is not left to stand alone. He who practices it will have neighbors.",孔子,Confucius
-7,敏而好学，不耻下问,"Be quick to learn and unashamed to seek advice from those below you.",孔子,Confucius
-8,吾日三省吾身,"Every day I examine myself on three points.",曾子,Zengzi
-9,知者不惑，仁者不忧，勇者不惧,"A wise man is not confused, a benevolent man is not worried, a brave man is not afraid.",孔子,Confucius
-10,满招损，谦受益,"Complacency brings loss; humility receives benefit.",尚书,The Book of Documents
-11,道可道，非常道；名可名，非常名,"The Tao that can be told is not the eternal Tao; the name that can be named is not the eternal name.",老子,Laozi
-12,企者不立，跨者不行,"He who stands on tiptoe is not steady; he who strides cannot maintain the pace.",老子,Laozi
-13,大器晚成,"A great vessel takes time to complete.",老子,Laozi
-14,上善若水,"The highest goodness is like water.",老子,Laozi
-15,知人者智，自知者明,"Knowing others is wisdom; knowing yourself is enlightenment.",老子,Laozi
-16,胜人者有力，自胜者强,"He who conquers others is strong; he who conquers himself is mighty.",老子,Laozi
-17,居安思危,"Think of danger in times of safety.",《左传》,Zuo Zhuan
-18,知足不辱，知止不殆,"He who knows contentment meets no disgrace; he who knows where to stop meets no danger.",老子,Laozi
-19,自助者天助,"Heaven helps those who help themselves.",《管子》,Guanzi
-20,强中更有强中手,"No matter how strong you are, there is always someone stronger.",中国谚语,Chinese Proverb
-21,言必信，行必果,"If you say it, you must keep your word; if you promise it, you must follow through.",孔子,Confucius
-22,君子和而不同，小人同而不和,"The gentleman seeks harmony but not uniformity; the small man seeks uniformity but not harmony.",孔子,Confucius
-23,将欲取之，必先与之,"To take, one must first give.",老子,Laozi
-24,不积跬步，无以至千里,"Without accumulating steps, you cannot reach a thousand miles.",荀子,Xunzi
-25,三人行，必有我师焉,"When three men walk together, one of them can teach me something.",孔子,Confucius
-26,得道多助，失道寡助,"He who has virtue gets much help; he who lacks virtue gets little help.",孟子,Mencius
-27,大丈夫能屈能伸,"A great man can bend and stretch as needed.",中国谚语,Chinese Proverb
-28,海纳百川，有容乃大,"The sea admits hundreds of rivers; it has room for all, thus it is great.",林则徐,Lin Zexu
-29,弱之胜强，柔之胜刚,"The weak overcomes the strong; the soft overcomes the hard.",老子,Laozi
-30,明枪易躲，暗箭难防,"An open spear thrust is easy to avoid; a hidden arrow is hard to guard against.",中国谚语,Chinese Proverb
-31,不闻不若闻之，闻之不若见之,"Hearing is not as good as seeing.",荀子,Xunzi
-32,当局者迷，旁观者清,"Those who are in it are confused; those who watch are clear.",中国谚语,Chinese Proverb
-33,尺有所短，寸有所长,"A foot may be short in some parts, and an inch may be long in others.",屈原,Qu Yuan
-34,博观而约取，厚积而薄发,"Observe widely and hold onto the essential; accumulate richly then release sparingly.",苏轼,Su Shi
-35,既来之，则安之,"Since you have come, you may as well settle down.",《左传》,Zuo Zhuan
-36,民以食为天,"People regard food as Heaven.",《史记》,Records of the Grand Historian
-37,读万卷书，行万里路,"Read ten thousand books and travel ten thousand miles.",刘彝,Liu Yi
-38,天时不如地利，地利不如人和,"Timing is not as good as the advantage of terrain, which is not as good as unity among people.",孟子,Mencius
-39,塞翁失马，焉知非福,"When the frontier old man lost his horse, how could one know it would not be fortuitous?",中国谚语,Chinese Proverb
-40,己所不欲，勿施于人,"What you do not want done to yourself, do not do to others.",孔子,Confucius
-41,千里之行，始于足下,"A journey of a thousand miles begins with a single step.",老子,Laozi
-42,知之者不如好之者，好之者不如乐之者,"Those who know are not as good as those who love, and those who love are not as good as those who find joy in it.",孔子,Confucius
-43,学而不思则罔，思而不学则殆,"Learning without thought is labor lost; thought without learning is perilous.",孔子,Confucius
-44,君子坦荡荡，小人长戚戚,"The superior man is always calm and at ease; the inferior man is always worried and distressed.",孔子,Confucius
-45,天行健，君子以自强不息,"As Heaven keeps vigor through movement, a gentleman should constantly strive for self-improvement.",周易,I Ching
-46,德不孤，必有邻,"Virtue is not left to stand alone. He who practices it will have neighbors.",孔子,Confucius
-47,敏而好学，不耻下问,"Be quick to learn and unashamed to seek advice from those below you.",孔子,Confucius
-48,吾日三省吾身,"Every day I examine myself on three points.",曾子,Zengzi
-49,知者不惑，仁者不忧，勇者不惧,"A wise man is not confused, a benevolent man is not worried, a brave man is not afraid.",孔子,Confucius
-50,满招损，谦受益,"Complacency brings loss; humility receives benefit.",尚书,The Book of Documents
-51,道可道，非常道；名可名，非常名,"The Tao that can be told is not the eternal Tao; the name that can be named is not the eternal name.",老子,Laozi
-52,企者不立，跨者不行,"He who stands on tiptoe is not steady; he who strides cannot maintain the pace.",老子,Laozi
-53,大器晚成,"A great vessel takes time to complete.",老子,Laozi
-54,上善若水,"The highest goodness is like water.",老子,Laozi
-55,知人者智，自知者明,"Knowing others is wisdom; knowing yourself is enlightenment.",老子,Laozi
-56,胜人者有力，自胜者强,"He who conquers others is strong; he who conquers himself is mighty.",老子,Laozi
-57,居安思危,"Think of danger in times of safety.",《左传》,Zuo Zhuan
-58,知足不辱，知止不殆,"He who knows contentment meets no disgrace; he who knows where to stop meets no danger.",老子,Laozi
-59,自助者天助,"Heaven helps those who help themselves.",《管子》,Guanzi
-60,强中更有强中手,"No matter how strong you are, there is always someone stronger.",中国谚语,Chinese Proverb
-61,言必信，行必果,"If you say it, you must keep your word; if you promise it, you must follow through.",孔子,Confucius
-62,君子和而不同，小人同而不和,"The gentleman seeks harmony but not uniformity; the small man seeks uniformity but not harmony.",孔子,Confucius
-63,将欲取之，必先与之,"To take, one must first give.",老子,Laozi
-64,不积跬步，无以至千里,"Without accumulating steps, you cannot reach a thousand miles.",荀子,Xunzi
-65,三人行，必有我师焉,"When three men walk together, one of them can teach me something.",孔子,Confucius
-66,得道多助，失道寡助,"He who has virtue gets much help; he who lacks virtue gets little help.",孟子,Mencius
-67,大丈夫能屈能伸,"A great man can bend and stretch as needed.",中国谚语,Chinese Proverb
-68,海纳百川，有容乃大,"The sea admits hundreds of rivers; it has room for all, thus it is great.",林则徐,Lin Zexu
-69,弱之胜强，柔之胜刚,"The weak overcomes the strong; the soft overcomes the hard.",老子,Laozi
-70,明枪易躲，暗箭难防,"An open spear thrust is easy to avoid; a hidden arrow is hard to guard against.",中国谚语,Chinese Proverb
-71,不闻不若闻之，闻之不若见之,"Hearing is not as good as seeing.",荀子,Xunzi
-72,当局者迷，旁观者清,"Those who are in it are confused; those who watch are clear.",中国谚语,Chinese Proverb
-73,尺有所短，寸有所长,"A foot may be short in some parts, and an inch may be long in others.",屈原,Qu Yuan
-74,博观而约取，厚积而薄发,"Observe widely and hold onto the essential; accumulate richly then release sparingly.",苏轼,Su Shi
-75,既来之，则安之,"Since you have come, you may as well settle down.",《左传》,Zuo Zhuan
-76,民以食为天,"People regard food as Heaven.",《史记》,Records of the Grand Historian
-77,读万卷书，行万里路,"Read ten thousand books and travel ten thousand miles.",刘彝,Liu Yi
-78,天时不如地利，地利不如人和,"Timing is not as good as the advantage of terrain, which is not as good as unity among people.",孟子,Mencius
-79,塞翁失马，焉知非福,"When the frontier old man lost his horse, how could one know it would not be fortuitous?",中国谚语,Chinese Proverb
-80,己所不欲，勿施于人,"What you do not want done to yourself, do not do to others.",孔子,Confucius
-81,千里之行，始于足下,"A journey of a thousand miles begins with a single step.",老子,Laozi
-82,知之者不如好之者，好之者不如乐之者,"Those who know are not as good as those who love, and those who love are not as good as those who find joy in it.",孔子,Confucius
-83,学而不思则罔，思而不学则殆,"Learning without thought is labor lost; thought without learning is perilous.",孔子,Confucius
-84,君子坦荡荡，小人长戚戚,"The superior man is always calm and at ease; the inferior man is always worried and distressed.",孔子,Confucius
-85,天行健，君子以自强不息,"As Heaven keeps vigor through movement, a gentleman should constantly strive for self-improvement.",周易,I Ching
-86,德不孤，必有邻,"Virtue is not left to stand alone. He who practices it will have neighbors.",孔子,Confucius
-87,敏而好学，不耻下问,"Be quick to learn and unashamed to seek advice from those below you.",孔子,Confucius
-88,吾日三省吾身,"Every day I examine myself on three points.",曾子,Zengzi
-89,知者不惑，仁者不忧，勇者不惧,"A wise man is not confused, a benevolent man is not worried, a brave man is not afraid.",孔子,Confucius
-90,满招损，谦受益,"Complacency brings loss; humility receives benefit.",尚书,The Book of Documents
-91,道可道，非常道；名可名，非常名,"The Tao that can be told is not the eternal Tao; the name that can be named is not the eternal name.",老子,Laozi
-92,企者不立，跨者不行,"He who stands on tiptoe is not steady; he who strides cannot maintain the pace.",老子,Laozi
-93,大器晚成,"A great vessel takes time to complete.",老子,Laozi
-94,上善若水,"The highest goodness is like water.",老子,Laozi
-95,知人者智，自知者明,"Knowing others is wisdom; knowing yourself is enlightenment.",老子,Laozi
-96,胜人者有力，自胜者强,"He who conquers others is strong; he who conquers himself is mighty.",老子,Laozi
-97,居安思危,"Think of danger in times of safety.",《左传》,Zuo Zhuan
-98,知足不辱，知止不殆,"He who knows contentment meets no disgrace; he who knows where to stop meets no danger.",老子,Laozi
-99,自助者天助,"Heaven helps those who help themselves.",《管子》,Guanzi
-100,强中更有强中手,"No matter how strong you are, there is always someone stronger.",中国谚语,Chinese Proverb
-101,言必信，行必果,"If you say it, you must keep your word; if you promise it, you must follow through.",孔子,Confucius
-102,君子和而不同，小人同而不和,"The gentleman seeks harmony but not uniformity; the small man seeks uniformity but not harmony.",孔子,Confucius
-103,将欲取之，必先与之,"To take, one must first give.",老子,Laozi
-104,不积跬步，无以至千里,"Without accumulating steps, you cannot reach a thousand miles.",荀子,Xunzi
-105,三人行，必有我师焉,"When three men walk together, one of them can teach me something.",孔子,Confucius
-106,得道多助，失道寡助,"He who has virtue gets much help; he who lacks virtue gets little help.",孟子,Mencius
-107,大丈夫能屈能伸,"A great man can bend and stretch as needed.",中国谚语,Chinese Proverb
-108,海纳百川，有容乃大,"The sea admits hundreds of rivers; it has room for all, thus it is great.",林则徐,Lin Zexu
-109,弱之胜强，柔之胜刚,"The weak overcomes the strong; the soft overcomes the hard.",老子,Laozi
-110,明枪易躲，暗箭难防,"An open spear thrust is easy to avoid; a hidden arrow is hard to guard against.",中国谚语,Chinese Proverb
-111,不闻不若闻之，闻之不若见之,"Hearing is not as good as seeing.",荀子,Xunzi
-112,当局者迷，旁观者清,"Those who are in it are confused; those who watch are clear.",中国谚语,Chinese Proverb
-113,尺有所短，寸有所长,"A foot may be short in some parts, and an inch may be long in others.",屈原,Qu Yuan
-114,博观而约取，厚积而薄发,"Observe widely and hold onto the essential; accumulate richly then release sparingly.",苏轼,Su Shi
-115,既来之，则安之,"Since you have come, you may as well settle down.",《左传》,Zuo Zhuan
-116,民以食为天,"People regard food as Heaven.",《史记》,Records of the Grand Historian
-117,读万卷书，行万里路,"Read ten thousand books and travel ten thousand miles.",刘彝,Liu Yi
-118,天时不如地利，地利不如人和,"Timing is not as good as the advantage of terrain, which is not as good as unity among people.",孟子,Mencius
-119,塞翁失马，焉知非福,"When the frontier old man lost his horse, how could one know it would not be fortuitous?",中国谚语,Chinese Proverb
-120,己所不欲，勿施于人,"What you do not want done to yourself, do not do to others.",孔子,Confucius
-121,千里之行，始于足下,"A journey of a thousand miles begins with a single step.",老子,Laozi
-122,知之者不如好之者，好之者不如乐之者,"Those who know are not as good as those who love, and those who love are not as good as those who find joy in it.",孔子,Confucius
-123,学而不思则罔，思而不学则殆,"Learning without thought is labor lost; thought without learning is perilous.",孔子,Confucius
-124,君子坦荡荡，小人长戚戚,"The superior man is always calm and at ease; the inferior man is always worried and distressed.",孔子,Confucius
-125,天行健，君子以自强不息,"As Heaven keeps vigor through movement, a gentleman should constantly strive for self-improvement.",周易,I Ching
-126,德不孤，必有邻,"Virtue is not left to stand alone. He who practices it will have neighbors.",孔子,Confucius
-127,敏而好学，不耻下问,"Be quick to learn and unashamed to seek advice from those below you.",孔子,Confucius
-128,吾日三省吾身,"Every day I examine myself on three points.",曾子,Zengzi
-129,知者不惑，仁者不忧，勇者不惧,"A wise man is not confused, a benevolent man is not worried, a brave man is not afraid.",孔子,Confucius
-130,满招损，谦受益,"Complacency brings loss; humility receives benefit.",尚书,The Book of Documents
-131,道可道，非常道；名可名，非常名,"The Tao that can be told is not the eternal Tao; the name that can be named is not the eternal name.",老子,Laozi
-132,企者不立，跨者不行,"He who stands on tiptoe is not steady; he who strides cannot maintain the pace.",老子,Laozi
-133,大器晚成,"A great vessel takes time to complete.",老子,Laozi
-134,上善若水,"The highest goodness is like water.",老子,Laozi
-135,知人者智，自知者明,"Knowing others is wisdom; knowing yourself is enlightenment.",老子,Laozi
-136,胜人者有力，自胜者强,"He who conquers others is strong; he who conquers himself is mighty.",老子,Laozi
-137,居安思危,"Think of danger in times of safety.",《左传》,Zuo Zhuan
-138,知足不辱，知止不殆,"He who knows contentment meets no disgrace; he who knows where to stop meets no danger.",老子,Laozi
-139,自助者天助,"Heaven helps those who help themselves.",《管子》,Guanzi
-140,强中更有强中手,"No matter how strong you are, there is always someone stronger.",中国谚语,Chinese Proverb
-141,言必信，行必果,"If you say it, you must keep your word; if you promise it, you must follow through.",孔子,Confucius
-142,君子和而不同，小人同而不和,"The gentleman seeks harmony but not uniformity; the small man seeks uniformity but not harmony.",孔子,Confucius
-143,将欲取之，必先与之,"To take, one must first give.",老子,Laozi
-144,不积跬步，无以至千里,"Without accumulating steps, you cannot reach a thousand miles.",荀子,Xunzi
-145,三人行，必有我师焉,"When three men walk together, one of them can teach me something.",孔子,Confucius
-146,得道多助，失道寡助,"He who has virtue gets much help; he who lacks virtue gets little help.",孟子,Mencius
-147,大丈夫能屈能伸,"A great man can bend and stretch as needed.",中国谚语,Chinese Proverb
-148,海纳百川，有容乃大,"The sea admits hundreds of rivers; it has room for all, thus it is great.",林则徐,Lin Zexu
-149,弱之胜强，柔之胜刚,"The weak overcomes the strong; the soft overcomes the hard.",老子,Laozi
-150,明枪易躲，暗箭难防,"An open spear thrust is easy to avoid; a hidden arrow is hard to guard against.",中国谚语,Chinese Proverb
-151,不闻不若闻之，闻之不若见之,"Hearing is not as good as seeing.",荀子,Xunzi
-152,当局者迷，旁观者清,"Those who are in it are confused; those who watch are clear.",中国谚语,Chinese Proverb
-153,尺有所短，寸有所长,"A foot may be short in some parts, and an inch may be long in others.",屈原,Qu Yuan
-154,博观而约取，厚积而薄发,"Observe widely and hold onto the essential; accumulate richly then release sparingly.",苏轼,Su Shi
-155,既来之，则安之,"Since you have come, you may as well settle down.",《左传》,Zuo Zhuan
-156,民以食为天,"People regard food as Heaven.",《史记》,Records of the Grand Historian
-157,读万卷书，行万里路,"Read ten thousand books and travel ten thousand miles.",刘彝,Liu Yi
-158,天时不如地利，地利不如人和,"Timing is not as good as the advantage of terrain, which is not as good as unity among people.",孟子,Mencius
-159,塞翁失马，焉知非福,"When the frontier old man lost his horse, how could one know it would not be fortuitous?",中国谚语,Chinese Proverb
-160,己所不欲，勿施于人,"What you do not want done to yourself, do not do to others.",孔子,Confucius
-161,千里之行，始于足下,"A journey of a thousand miles begins with a single step.",老子,Laozi
-162,知之者不如好之者，好之者不如乐之者,"Those who know are not as good as those who love, and those who love are not as good as those who find joy in it.",孔子,Confucius
-163,学而不思则罔，思而不学则殆,"Learning without thought is labor lost; thought without learning is perilous.",孔子,Confucius
-164,君子坦荡荡，小人长戚戚,"The superior man is always calm and at ease; the inferior man is always worried and distressed.",孔子,Confucius
-165,天行健，君子以自强不息,"As Heaven keeps vigor through movement, a gentleman should constantly strive for self-improvement.",周易,I Ching
-166,德不孤，必有邻,"Virtue is not left to stand alone. He who practices it will have neighbors.",孔子,Confucius
-167,敏而好学，不耻下问,"Be quick to learn and unashamed to seek advice from those below you.",孔子,Confucius
-168,吾日三省吾身,"Every day I examine myself on three points.",曾子,Zengzi
-169,知者不惑，仁者不忧，勇者不惧,"A wise man is not confused, a benevolent man is not worried, a brave man is not afraid.",孔子,Confucius
-170,满招损，谦受益,"Complacency brings loss; humility receives benefit.",尚书,The Book of Documents
-171,道可道，非常道；名可名，非常名,"The Tao that can be told is not the eternal Tao; the name that can be named is not the eternal name.",老子,Laozi
-172,企者不立，跨者不行,"He who stands on tiptoe is not steady; he who strides cannot maintain the pace.",老子,Laozi
-173,大器晚成,"A great vessel takes time to complete.",老子,Laozi
-174,上善若水,"The highest goodness is like water.",老子,Laozi
-175,知人者智，自知者明,"Knowing others is wisdom; knowing yourself is enlightenment.",老子,Laozi
-176,胜人者有力，自胜者强,"He who conquers others is strong; he who conquers himself is mighty.",老子,Laozi
-177,居安思危,"Think of danger in times of safety.",《左传》,Zuo Zhuan
-178,知足不辱，知止不殆,"He who knows contentment meets no disgrace; he who knows where to stop meets no danger.",老子,Laozi
-179,自助者天助,"Heaven helps those who help themselves.",《管子》,Guanzi
-180,强中更有强中手,"No matter how strong you are, there is always someone stronger.",中国谚语,Chinese Proverb
-181,言必信，行必果,"If you say it, you must keep your word; if you promise it, you must follow through.",孔子,Confucius
-182,君子和而不同，小人同而不和,"The gentleman seeks harmony but not uniformity; the small man seeks uniformity but not harmony.",孔子,Confucius
-183,将欲取之，必先与之,"To take, one must first give.",老子,Laozi
-184,不积跬步，无以至千里,"Without accumulating steps, you cannot reach a thousand miles.",荀子,Xunzi
-185,三人行，必有我师焉,"When three men walk together, one of them can teach me something.",孔子,Confucius
-186,得道多助，失道寡助,"He who has virtue gets much help; he who lacks virtue gets little help.",孟子,Mencius
-187,大丈夫能屈能伸,"A great man can bend and stretch as needed.",中国谚语,Chinese Proverb
-188,海纳百川，有容乃大,"The sea admits hundreds of rivers; it has room for all, thus it is great.",林则徐,Lin Zexu
-189,弱之胜强，柔之胜刚,"The weak overcomes the strong; the soft overcomes the hard.",老子,Laozi
-190,明枪易躲，暗箭难防,"An open spear thrust is easy to avoid; a hidden arrow is hard to guard against.",中国谚语,Chinese Proverb
-191,不闻不若闻之，闻之不若见之,"Hearing is not as good as seeing.",荀子,Xunzi
-192,当局者迷，旁观者清,"Those who are in it are confused; those who watch are clear.",中国谚语,Chinese Proverb
-193,尺有所短，寸有所长,"A foot may be short in some parts, and an inch may be long in others.",屈原,Qu Yuan
-194,博观而约取，厚积而薄发,"Observe widely and hold onto the essential; accumulate richly then release sparingly.",苏轼,Su Shi
-195,既来之，则安之,"Since you have come, you may as well settle down.",《左传》,Zuo Zhuan
-196,民以食为天,"People regard food as Heaven.",《史记》,Records of the Grand Historian
-197,读万卷书，行万里路,"Read ten thousand books and travel ten thousand miles.",刘彝,Liu Yi
-198,天时不如地利，地利不如人和,"Timing is not as good as the advantage of terrain, which is not as good as unity among people.",孟子,Mencius
-199,塞翁失马，焉知非福,"When the frontier old man lost his horse, how could one know it would not be fortuitous?",中国谚语,Chinese Proverb
-200,己所不欲，勿施于人,"What you do not want done to yourself, do not do to others.",孔子,Confucius
-201,千里之行，始于足下,"A journey of a thousand miles begins with a single step.",老子,Laozi
-202,知之者不如好之者，好之者不如乐之者,"Those who know are not as good as those who love, and those who love are not as good as those who find joy in it.",孔子,Confucius
-203,学而不思则罔，思而不学则殆,"Learning without thought is labor lost; thought without learning is perilous.",孔子,Confucius
-204,君子坦荡荡，小人长戚戚,"The superior man is always calm and at ease; the inferior man is always worried and distressed.",孔子,Confucius
-205,天行健，君子以自强不息,"As Heaven keeps vigor through movement, a gentleman should constantly strive for self-improvement.",周易,I Ching
-206,德不孤，必有邻,"Virtue is not left to stand alone. He who practices it will have neighbors.",孔子,Confucius
-207,敏而好学，不耻下问,"Be quick to learn and unashamed to seek advice from those below you.",孔子,Confucius
-208,吾日三省吾身,"Every day I examine myself on three points.",曾子,Zengzi
-209,知者不惑，仁者不忧，勇者不惧,"A wise man is not confused, a benevolent man is not worried, a brave man is not afraid.",孔子,Confucius
-210,满招损，谦受益,"Complacency brings loss; humility receives benefit.",尚书,The Book of Documents
-211,道可道，非常道；名可名，非常名,"The Tao that can be told is not the eternal Tao; the name that can be named is not the eternal name.",老子,Laozi
-212,企者不立，跨者不行,"He who stands on tiptoe is not steady; he who strides cannot maintain the pace.",老子,Laozi
-213,大器晚成,"A great vessel takes time to complete.",老子,Laozi
-214,上善若水,"The highest goodness is like water.",老子,Laozi
-215,知人者智，自知者明,"Knowing others is wisdom; knowing yourself is enlightenment.",老子,Laozi
-216,胜人者有力，自胜者强,"He who conquers others is strong; he who conquers himself is mighty.",老子,Laozi
-217,居安思危,"Think of danger in times of safety.",《左传》,Zuo Zhuan
-218,知足不辱，知止不殆,"He who knows contentment meets no disgrace; he who knows where to stop meets no danger.",老子,Laozi
-219,自助者天助,"Heaven helps those who help themselves.",《管子》,Guanzi
-220,强中更有强中手,"No matter how strong you are, there is always someone stronger.",中国谚语,Chinese Proverb
-221,言必信，行必果,"If you say it, you must keep your word; if you promise it, you must follow through.",孔子,Confucius
-222,君子和而不同，小人同而不和,"The gentleman seeks harmony but not uniformity; the small man seeks uniformity but not harmony.",孔子,Confucius
-223,将欲取之，必先与之,"To take, one must first give.",老子,Laozi
-224,不积跬步，无以至千里,"Without accumulating steps, you cannot reach a thousand miles.",荀子,Xunzi
-225,三人行，必有我师焉,"When three men walk together, one of them can teach me something.",孔子,Confucius
-226,得道多助，失道寡助,"He who has virtue gets much help; he who lacks virtue gets little help.",孟子,Mencius
-227,大丈夫能屈能伸,"A great man can bend and stretch as needed.",中国谚语,Chinese Proverb
-228,海纳百川，有容乃大,"The sea admits hundreds of rivers; it has room for all, thus it is great.",林则徐,Lin Zexu
-229,弱之胜强，柔之胜刚,"The weak overcomes the strong; the soft overcomes the hard.",老子,Laozi
-230,明枪易躲，暗箭难防,"An open spear thrust is easy to avoid; a hidden arrow is hard to guard against.",中国谚语,Chinese Proverb
-231,不闻不若闻之，闻之不若见之,"Hearing is not as good as seeing.",荀子,Xunzi
-232,当局者迷，旁观者清,"Those who are in it are confused; those who watch are clear.",中国谚语,Chinese Proverb
-233,尺有所短，寸有所长,"A foot may be short in some parts, and an inch may be long in others.",屈原,Qu Yuan
-234,博观而约取，厚积而薄发,"Observe widely and hold onto the essential; accumulate richly then release sparingly.",苏轼,Su Shi
-235,既来之，则安之,"Since you have come, you may as well settle down.",《左传》,Zuo Zhuan
-236,民以食为天,"People regard food as Heaven.",《史记》,Records of the Grand Historian
-237,读万卷书，行万里路,"Read ten thousand books and travel ten thousand miles.",刘彝,Liu Yi
-238,天时不如地利，地利不如人和,"Timing is not as good as the advantage of terrain, which is not as good as unity among people.",孟子,Mencius
-239,塞翁失马，焉知非福,"When the frontier old man lost his horse, how could one know it would not be fortuitous?",中国谚语,Chinese Proverb
-240,己所不欲，勿施于人,"What you do not want done to yourself, do not do to others.",孔子,Confucius
-241,千里之行，始于足下,"A journey of a thousand miles begins with a single step.",老子,Laozi
-242,知之者不如好之者，好之者不如乐之者,"Those who know are not as good as those who love, and those who love are not as good as those who find joy in it.",孔子,Confucius
-243,学而不思则罔，思而不学则殆,"Learning without thought is labor lost; thought without learning is perilous.",孔子,Confucius
-244,君子坦荡荡，小人长戚戚,"The superior man is always calm and at ease; the inferior man is always worried and distressed.",孔子,Confucius
-245,天行健，君子以自强不息,"As Heaven keeps vigor through movement, a gentleman should constantly strive for self-improvement.",周易,I Ching
-246,德不孤，必有邻,"Virtue is not left to stand alone. He who practices it will have neighbors.",孔子,Confucius
-247,敏而好学，不耻下问,"Be quick to learn and unashamed to seek advice from those below you.",孔子,Confucius
-248,吾日三省吾身,"Every day I examine myself on three points.",曾子,Zengzi
-249,知者不惑，仁者不忧，勇者不惧,"A wise man is not confused, a benevolent man is not worried, a brave man is not afraid.",孔子,Confucius
-250,满招损，谦受益,"Complacency brings loss; humility receives benefit.",尚书,The Book of Documents
-251,道可道，非常道；名可名，非常名,"The Tao that can be told is not the eternal Tao; the name that can be named is not the eternal name.",老子,Laozi
-252,企者不立，跨者不行,"He who stands on tiptoe is not steady; he who strides cannot maintain the pace.",老子,Laozi
-253,大器晚成,"A great vessel takes time to complete.",老子,Laozi
-254,上善若水,"The highest goodness is like water.",老子,Laozi
-255,知人者智，自知者明,"Knowing others is wisdom; knowing yourself is enlightenment.",老子,Laozi
-256,胜人者有力，自胜者强,"He who conquers others is strong; he who conquers himself is mighty.",老子,Laozi
-257,居安思危,"Think of danger in times of safety.",《左传》,Zuo Zhuan
-258,知足不辱，知止不殆,"He who knows contentment meets no disgrace; he who knows where to stop meets no danger.",老子,Laozi
-259,自助者天助,"Heaven helps those who help themselves.",《管子》,Guanzi
-260,强中更有强中手,"No matter how strong you are, there is always someone stronger.",中国谚语,Chinese Proverb
-261,言必信，行必果,"If you say it, you must keep your word; if you promise it, you must follow through.",孔子,Confucius
-262,君子和而不同，小人同而不和,"The gentleman seeks harmony but not uniformity; the small man seeks uniformity but not harmony.",孔子,Confucius
-263,将欲取之，必先与之,"To take, one must first give.",老子,Laozi
-264,不积跬步，无以至千里,"Without accumulating steps, you cannot reach a thousand miles.",荀子,Xunzi
-265,三人行，必有我师焉,"When three men walk together, one of them can teach me something.",孔子,Confucius
-266,得道多助，失道寡助,"He who has virtue gets much help; he who lacks virtue gets little help.",孟子,Mencius
-267,大丈夫能屈能伸,"A great man can bend and stretch as needed.",中国谚语,Chinese Proverb
-268,海纳百川，有容乃大,"The sea admits hundreds of rivers; it has room for all, thus it is great.",林则徐,Lin Zexu
-269,弱之胜强，柔之胜刚,"The weak overcomes the strong; the soft overcomes the hard.",老子,Laozi
-270,明枪易躲，暗箭难防,"An open spear thrust is easy to avoid; a hidden arrow is hard to guard against.",中国谚语,Chinese Proverb
-271,不闻不若闻之，闻之不若见之,"Hearing is not as good as seeing.",荀子,Xunzi
-272,当局者迷，旁观者清,"Those who are in it are confused; those who watch are clear.",中国谚语,Chinese Proverb
-273,尺有所短，寸有所长,"A foot may be short in some parts, and an inch may be long in others.",屈原,Qu Yuan
-274,博观而约取，厚积而薄发,"Observe widely and hold onto the essential; accumulate richly then release sparingly.",苏轼,Su Shi
-275,既来之，则安之,"Since you have come, you may as well settle down.",《左传》,Zuo Zhuan
-276,民以食为天,"People regard food as Heaven.",《史记》,Records of the Grand Historian
-277,读万卷书，行万里路,"Read ten thousand books and travel ten thousand miles.",刘彝,Liu Yi
-278,天时不如地利，地利不如人和,"Timing is not as good as the advantage of terrain, which is not as good as unity among people.",孟子,Mencius
-279,塞翁失马，焉知非福,"When the frontier old man lost his horse, how could one know it would not be fortuitous?",中国谚语,Chinese Proverb
-280,己所不欲，勿施于人,"What you do not want done to yourself, do not do to others.",孔子,Confucius
-281,千里之行，始于足下,"A journey of a thousand miles begins with a single step.",老子,Laozi
-282,知之者不如好之者，好之者不如乐之者,"Those who know are not as good as those who love, and those who love are not as good as those who find joy in it.",孔子,Confucius
-283,学而不思则罔，思而不学则殆,"Learning without thought is labor lost; thought without learning is perilous.",孔子,Confucius
-284,君子坦荡荡，小人长戚戚,"The superior man is always calm and at ease; the inferior man is always worried and distressed.",孔子,Confucius
-285,天行健，君子以自强不息,"As Heaven keeps vigor through movement, a gentleman should constantly strive for self-improvement.",周易,I Ching
-286,德不孤，必有邻,"Virtue is not left to stand alone. He who practices it will have neighbors.",孔子,Confucius
-287,敏而好学，不耻下问,"Be quick to learn and unashamed to seek advice from those below you.",孔子,Confucius
-288,吾日三省吾身,"Every day I examine myself on three points.",曾子,Zengzi
-289,知者不惑，仁者不忧，勇者不惧,"A wise man is not confused, a benevolent man is not worried, a brave man is not afraid.",孔子,Confucius
-290,满招损，谦受益,"Complacency brings loss; humility receives benefit.",尚书,The Book of Documents
-291,道可道，非常道；名可名，非常名,"The Tao that can be told is not the eternal Tao; the name that can be named is not the eternal name.",老子,Laozi
-292,企者不立，跨者不行,"He who stands on tiptoe is not steady; he who strides cannot maintain the pace.",老子,Laozi
-293,大器晚成,"A great vessel takes time to complete.",老子,Laozi
-294,上善若水,"The highest goodness is like water.",老子,Laozi
-295,知人者智，自知者明,"Knowing others is wisdom; knowing yourself is enlightenment.",老子,Laozi
-296,胜人者有力，自胜者强,"He who conquers others is strong; he who conquers himself is mighty.",老子,Laozi
-297,居安思危,"Think of danger in times of safety.",《左传》,Zuo Zhuan
-298,知足不辱，知止不殆,"He who knows contentment meets no disgrace; he who knows where to stop meets no danger.",老子,Laozi
-299,自助者天助,"Heaven helps those who help themselves.",《管子》,Guanzi
-300,强中更有强中手,"No matter how strong you are, there is always someone stronger.",中国谚语,Chinese Proverb
-301,言必信，行必果,"If you say it, you must keep your word; if you promise it, you must follow through.",孔子,Confucius
-302,君子和而不同，小人同而不和,"The gentleman seeks harmony but not uniformity; the small man seeks uniformity but not harmony.",孔子,Confucius
-303,将欲取之，必先与之,"To take, one must first give.",老子,Laozi
-304,不积跬步，无以至千里,"Without accumulating steps, you cannot reach a thousand miles.",荀子,Xunzi
-305,三人行，必有我师焉,"When three men walk together, one of them can teach me something.",孔子,Confucius
-306,得道多助，失道寡助,"He who has virtue gets much help; he who lacks virtue gets little help.",孟子,Mencius
-307,大丈夫能屈能伸,"A great man can bend and stretch as needed.",中国谚语,Chinese Proverb
-308,海纳百川，有容乃大,"The sea admits hundreds of rivers; it has room for all, thus it is great.",林则徐,Lin Zexu
-309,弱之胜强，柔之胜刚,"The weak overcomes the strong; the soft overcomes the hard.",老子,Laozi
-310,明枪易躲，暗箭难防,"An open spear thrust is easy to avoid; a hidden arrow is hard to guard against.",中国谚语,Chinese Proverb
-311,不闻不若闻之，闻之不若见之,"Hearing is not as good as seeing.",荀子,Xunzi
-312,当局者迷，旁观者清,"Those who are in it are confused; those who watch are clear.",中国谚语,Chinese Proverb
-313,尺有所短，寸有所长,"A foot may be short in some parts, and an inch may be long in others.",屈原,Qu Yuan
-314,博观而约取，厚积而薄发,"Observe widely and hold onto the essential; accumulate richly then release sparingly.",苏轼,Su Shi
-315,既来之，则安之,"Since you have come, you may as well settle down.",《左传》,Zuo Zhuan
-316,民以食为天,"People regard food as Heaven.",《史记》,Records of the Grand Historian
-317,读万卷书，行万里路,"Read ten thousand books and travel ten thousand miles.",刘彝,Liu Yi
-318,天时不如地利，地利不如人和,"Timing is not as good as the advantage of terrain, which is not as good as unity among people.",孟子,Mencius
-319,塞翁失马，焉知非福,"When the frontier old man lost his horse, how could one know it would not be fortuitous?",中国谚语,Chinese Proverb
-320,己所不欲，勿施于人,"What you do not want done to yourself, do not do to others.",孔子,Confucius
-321,千里之行，始于足下,"A journey of a thousand miles begins with a single step.",老子,Laozi
-322,知之者不如好之者，好之者不如乐之者,"Those who know are not as good as those who love, and those who love are not as good as those who find joy in it.",孔子,Confucius
-323,学而不思则罔，思而不学则殆,"Learning without thought is labor lost; thought without learning is perilous.",孔子,Confucius
-324,君子坦荡荡，小人长戚戚,"The superior man is always calm and at ease; the inferior man is always worried and distressed.",孔子,Confucius
-325,天行健，君子以自强不息,"As Heaven keeps vigor through movement, a gentleman should constantly strive for self-improvement.",周易,I Ching
-326,德不孤，必有邻,"Virtue is not left to stand alone. He who practices it will have neighbors.",孔子,Confucius
-327,敏而好学，不耻下问,"Be quick to learn and unashamed to seek advice from those below you.",孔子,Confucius
-328,吾日三省吾身,"Every day I examine myself on three points.",曾子,Zengzi
-329,知者不惑，仁者不忧，勇者不惧,"A wise man is not confused, a benevolent man is not worried, a brave man is not afraid.",孔子,Confucius
-330,满招损，谦受益,"Complacency brings loss; humility receives benefit.",尚书,The Book of Documents
-331,道可道，非常道；名可名，非常名,"The Tao that can be told is not the eternal Tao; the name that can be named is not the eternal name.",老子,Laozi
-332,企者不立，跨者不行,"He who stands on tiptoe is not steady; he who strides cannot maintain the pace.",老子,Laozi
-333,大器晚成,"A great vessel takes time to complete.",老子,Laozi
-334,上善若水,"The highest goodness is like water.",老子,Laozi
-335,知人者智，自知者明,"Knowing others is wisdom; knowing yourself is enlightenment.",老子,Laozi
-336,胜人者有力，自胜者强,"He who conquers others is strong; he who conquers himself is mighty.",老子,Laozi
-337,居安思危,"Think of danger in times of safety.",《左传》,Zuo Zhuan
-338,知足不辱，知止不殆,"He who knows contentment meets no disgrace; he who knows where to stop meets no danger.",老子,Laozi
-339,自助者天助,"Heaven helps those who help themselves.",《管子》,Guanzi
-340,强中更有强中手,"No matter how strong you are, there is always someone stronger.",中国谚语,Chinese Proverb
-341,言必信，行必果,"If you say it, you must keep your word; if you promise it, you must follow through.",孔子,Confucius
-342,君子和而不同，小人同而不和,"The gentleman seeks harmony but not uniformity; the small man seeks uniformity but not harmony.",孔子,Confucius
-343,将欲取之，必先与之,"To take, one must first give.",老子,Laozi
-344,不积跬步，无以至千里,"Without accumulating steps, you cannot reach a thousand miles.",荀子,Xunzi
-345,三人行，必有我师焉,"When three men walk together, one of them can teach me something.",孔子,Confucius
-346,得道多助，失道寡助,"He who has virtue gets much help; he who lacks virtue gets little help.",孟子,Mencius
-347,大丈夫能屈能伸,"A great man can bend and stretch as needed.",中国谚语,Chinese Proverb
-348,海纳百川，有容乃大,"The sea admits hundreds of rivers; it has room for all, thus it is great.",林则徐,Lin Zexu
-349,弱之胜强，柔之胜刚,"The weak overcomes the strong; the soft overcomes the hard.",老子,Laozi
-350,明枪易躲，暗箭难防,"An open spear thrust is easy to avoid; a hidden arrow is hard to guard against.",中国谚语,Chinese Proverb
-351,不闻不若闻之，闻之不若见之,"Hearing is not as good as seeing.",荀子,Xunzi
-352,当局者迷，旁观者清,"Those who are in it are confused; those who watch are clear.",中国谚语,Chinese Proverb
-353,尺有所短，寸有所长,"A foot may be short in some parts, and an inch may be long in others.",屈原,Qu Yuan
-354,博观而约取，厚积而薄发,"Observe widely and hold onto the essential; accumulate richly then release sparingly.",苏轼,Su Shi
-355,既来之，则安之,"Since you have come, you may as well settle down.",《左传》,Zuo Zhuan
-356,民以食为天,"People regard food as Heaven.",《史记》,Records of the Grand Historian
-357,读万卷书，行万里路,"Read ten thousand books and travel ten thousand miles.",刘彝,Liu Yi
-358,天时不如地利，地利不如人和,"Timing is not as good as the advantage of terrain, which is not as good as unity among people.",孟子,Mencius
-359,塞翁失马，焉知非福,"When the frontier old man lost his horse, how could one know it would not be fortuitous?",中国谚语,Chinese Proverb
-360,己所不欲，勿施于人,"What you do not want done to yourself, do not do to others.",孔子,Confucius
-361,千里之行，始于足下,"A journey of a thousand miles begins with a single step.",老子,Laozi
-362,知之者不如好之者，好之者不如乐之者,"Those who know are not as good as those who love, and those who love are not as good as those who find joy in it.",孔子,Confucius
-363,学而不思则罔，思而不学则殆,"Learning without thought is labor lost; thought without learning is perilous.",孔子,Confucius
-364,君子坦荡荡，小人长戚戚,"The superior man is always calm and at ease; the inferior man is always worried and distressed.",孔子,Confucius
-365,天行健，君子以自强不息,"As Heaven keeps vigor through movement, a gentleman should constantly strive for self-improvement.",周易,I Ching
-366,德不孤，必有邻,"Virtue is not left to stand alone. He who practices it will have neighbors.",孔子,Confucius
+No,Chinese,Author_CL,English,Author_EL
+1,"君子藏器于身，待时而动。","《周易》","A person of noble character keeps their abilities concealed, waiting for the opportune moment to act.","The Book of Changes"
+2,"仁者见之谓之仁，智者见之谓之智。","《周易》","The kind-hearted recognize it as virtue, while the wise perceive it as wisdom.","The Book of Changes"
+3,"穷则变，变则通，通则久。","《周易》","When pushed to the limits, one must adapt; adaptation leads to breakthrough, and breakthrough endures.","The Book of Changes"
+4,"天行健，君子以自强不息。","《周易》","Just as the heavens persist in their vigorous course, a noble person continually strives to better themselves without ceasing.","The Book of Changes"
+5,"地势坤，君子以厚德载物。","《周易》","Like the nurturing earth, a noble individual bears the weight of the world with deep, enduring virtue.","The Book of Changes"
+6,"方以类聚，物以群分，吉凶生也！","《周易》","People and things naturally group with their kind, from which both fortune and misfortune emerge.","The Book of Changes"
+7,"积善之家，必有余庆；积不善之家，必有余殃。","《周易》","A home filled with accumulated goodness reaps enduring blessings, whereas one steeped in misdeeds ultimately faces lingering misfortune.","The Book of Changes"
+8,"一阴一阳之为道.","《周易》","The dynamic balance of yin and yang forms the essence of the Way.","The Book of Changes"
+9,"亢龙有悔","《周易》","When the mighty dragon soars too high, it inevitably meets regret.","The Book of Changes"
+10,"不事王侯，高尚其事","《周易》","By not bowing to the whims of princes, one can pursue truly noble causes.","The Book of Changes"
+11,"君子以言有物而行有恒","《周易》","A noble person’s words carry weight and their actions are marked by steadfastness.","The Book of Changes"
+12,"君子以独立不惧，遁世无闷","《周易》","A person of integrity remains self‐reliant and fearless, undaunted by worldly concerns.","The Book of Changes"
+13,"君子以多识前贤往行，以蓄其得","《周易》","A noble soul draws from the wisdom of predecessors, accumulating insights for a purposeful life.","The Book of Changes"
+14,"见险而能止，君子以反身修德","《周易》","Recognizing peril, a noble individual exercises restraint and turns inward to cultivate virtue.","The Book of Changes"
+15,"君子以顺德，积小以高大","《周易》","Through adherence to virtue and the gathering of small deeds, a noble person builds a grand life.","The Book of Changes"
+16,"天地节而四时成，节以制度。当位以节，中正以通。","《周易》","Just as the cosmos orchestrates the seasons through natural order, so does balance and fairness guide proper conduct.","The Book of Changes"
+17,"震来虩虩，震往来厉","《周易》","The force of thunder is both awe‐inspiring and formidable, leaving a lasting impression in its wake.","The Book of Changes"
+18,"无平不陂，无往不复","《周易》","Just as no level ground remains even, every journey has its return; nothing ever stays permanently unaltered.","The Book of Changes"
+19,"素履往，无咎。履道坦坦，幽人贞吉","《周易》","Walking simply leads to a trouble‐free journey; when the path is straight, even the reclusive enjoy enduring good fortune.","The Book of Changes"
+20,"天地交而万物通，上下交而其志同，内阳而外阴，内健而外顺，内君子而外小人，君子道长而小人道消也！","《周易》","When the forces of heaven and earth harmonize, all things thrive; similarly, when true virtue meets genuine character, the noble spirit endures while lesser qualities fade away.","The Book of Changes"
+21,"谦谦君子，用涉大川","《周易》","A humble gentleman, with his quiet strength, can navigate even the mightiest challenges.","The Book of Changes"
+22,"劳谦，君子有终","《周易》","With hard work and humility, a noble individual sees their endeavors through to the end.","The Book of Changes"
+23,"天道下济而光明，地道卑而上行。人道恶盈而好谦.","《周易》","Heaven aids by uplifting the lowly with brilliance, while the earth ascends from its humble roots; similarly, people shun excess and value modesty.","The Book of Changes"
+24,"时止则止，时行则行，动静不失其时，其道光明","《周易》","Knowing when to pause and when to act, one stays in tune with the natural rhythm, and that path shines with clarity.","The Book of Changes"
+25,"日中则昃，月盈则食，天地盈虚，与时消息，而况于人乎？","《周易》","Just as the sun declines at its peak and the full moon gives way, all things in nature follow cycles—so too must human endeavors adapt.","The Book of Changes"
+26,"上善若水，水善利万物而不争。","《道德经》","The highest form of goodness flows like water—nurturing all without seeking to compete.","Tao Te Ching"
+27,"飘风不终朝，骤雨不终日。","《道德经》","A raging wind never endures the entire morning, nor does a heavy rain last all day—change is inherent.","Tao Te Ching"
+28,"挫其锐，解其纷，和其光，同其尘。","《道德经》","By softening edges and quelling conflict, one harmonizes brilliance with the common, blending the extraordinary into the ordinary.","Tao Te Ching"
+29,"致虚极，守静笃。万物并作，吾以观复。","《道德经》","By attaining profound emptiness and steadfast tranquility, one watches the endless cycle of creation and renewal.","Tao Te Ching"
+30,"见素抱朴，少私寡欲。","《道德经》","Embracing simplicity and remaining true to one's nature, while curbing selfish desires.","Tao Te Ching"
+31,"不自见，故明；不自是，故彰；不自伐，故有功；不自矜，故长；夫唯不争，故天下莫能与之争。","《道德经》","Without self‐aggrandizement, clarity prevails; without self‐justification, true merit is revealed; by eschewing pride and contention, one attains lasting influence.","Tao Te Ching"
+32,"知人者智，自知者明。胜人者有力，自胜者强。","《道德经》","Wisdom lies in understanding others, but insight shines in self‐awareness; strength overcomes external foes, but mastery of oneself is true power.","Tao Te Ching"
+33,"人法地，地法天，天法道，道法自然。","《道德经》","Humans model themselves on the earth; the earth follows the heavens; the heavens abide by the Dao, which in turn flows naturally.","Tao Te Ching"
+34,"重为轻根，静为躁君；轻则失根，躁则失君。","《道德经》","Heaviness grounds what is light, and tranquility governs restlessness; without these, stability is lost.","Tao Te Ching"
+35,"将欲歙之，必固张之；将欲弱之，必固强之；将欲废之，必固兴之；将欲夺之，必固与之。","《道德经》","To truly influence, one must first allow freedom; to diminish, first empower; to abolish, first encourage; and to take away, one must be willing to give.","Tao Te Ching"
+36,"大方无隅，大器晚成，大音希声，大象无形。","《道德经》","Greatness defies boundaries, masterpieces take time to form, the most profound music is subtle, and the greatest visions are without shape.","Tao Te Ching"
+37,"天下之至柔，驰骋天下之至坚。","《道德经》","In the world, the softest substance can conquer the hardest obstacles.","Tao Te Ching"
+38,"甚爱必大费，多藏必厚亡。知足不辱，知止不殆，可以长久。","《道德经》","Intense passion often comes at a high price, and excessive accumulation invites ruin; contentment and knowing when to cease ensure lasting peace.","Tao Te Ching"
+39,"上士闻道，勤而行之；中士闻道，若存若亡；下士闻道，大笑之，不笑不足以为道。","《道德经》","When the Way is spoken of, the noble pursue it earnestly, the mediocre regard it indifferently, while the foolish dismiss it with derision.","Tao Te Ching"
+40,"慎终如始，则无败事。","《道德经》","Maintaining the same care at the end as at the start ensures that nothing will go awry.","Tao Te Ching"
+41,"我有三宝，持而保之：一曰慈，二曰俭，三曰不敢为天下先。","《道德经》","I cherish three treasures—compassion, frugality, and the humility of never insisting on being first.","Tao Te Ching"
+42,"是以圣人后其身而身先，外其身而身存。非以其无私邪？故能成其私。","《道德经》","The sage puts his own interests aside, and in doing so, his true self shines through; by being selfless, he ultimately secures his own lasting legacy.","Tao Te Ching"
+43,"天之道，利而不害。圣人之道，为而不争。","《道德经》","Nature’s way enriches without injury, and the sage achieves by acting without competition.","Tao Te Ching"
+44,"万物作而弗始，生而弗有，为而弗恃，功成而不居。","《道德经》","All things come into being without the creator taking credit, act without claiming ownership, and succeed without clinging to the glory.","Tao Te Ching"
+45,"天地不仁，以万物为刍狗；圣人不仁，以百姓为刍狗。","《道德经》","Nature cares not for life, using all creatures indiscriminately, and likewise, the sage remains impartial, letting the masses follow their own course.","Tao Te Ching"
+46,"人之生也，与忧俱生。","《庄子》","From the moment of birth, human life is inseparable from sorrow.","Zhuangzi"
+47,"吾生也有涯，而知也无涯。","《庄子》","While our time on earth is finite, the pursuit of knowledge knows no bounds.","Zhuangzi"
+48,"以管窥天，以锥刺地。","《庄子》","To glimpse the vast sky through a narrow tube, or to explore the earth with a tiny awl—such limited views distort the truth.","Zhuangzi"
+49,"泉涸，鱼相与处于陆，相呴以湿，相濡以沫，不如相忘于江湖。","《庄子》","When resources run dry, even desperate creatures may help each other; yet sometimes, it's best to let go and move on, like fish separated by a river.","Zhuangzi"
+50,"哀莫大于心死，而人死亦次之。","《庄子》","The greatest tragedy is not physical death, but a heart that has lost its vitality—only then does actual death come close.","Zhuangzi"
+51,"其嗜欲深者，其天机浅。","《庄子》","The more consumed one is by desire, the less they grasp the mysteries of life.","Zhuangzi"
+52,"且夫水之积也不厚，则其负大舟也无力。","《庄子》","Without sufficient depth, even water cannot bear the weight of a mighty vessel.","Zhuangzi"
+53,"凫胫虽短，续之则忧；鹤胫虽长，断之则悲。","《庄子》","Short legs of a duck may seem trivial, but when impaired, they cause worry; while even the graceful crane suffers deeply when its long legs are broken.","Zhuangzi"
+54,"人生天地之间，若白驹之过隙，忽然而已。","《庄子》","Life, in the grand scheme, is as fleeting as a white steed dashing through a narrow gap—gone in an instant.","Zhuangzi"
+55,"物无非彼，物无非是；自彼则不见，自知则知之。故曰：彼出于是，是亦因彼。","《庄子》","All things are understood in contrast, yet beyond our limited view, their true nature emerges—a reminder that existence is interconnected.","Zhuangzi"
+56,"以火救火，以水救水，名之曰益多。","《庄子》","Trying to solve a problem with more of the same element only leads to excess, never to true resolution.","Zhuangzi"
+57,"美成在久，恶成不及改。","《庄子》","Virtue, when nurtured over time, becomes enduring, whereas vice is stubbornly resistant to change.","Zhuangzi"
+58,"时雨降矣，而犹浸灌，其于泽也，不亦劳乎！","《庄子》","Though the rain may come in short bursts, its steady nourishment of the land is a relentless, yet essential effort.","Zhuangzi"
+59,"出入六合，游乎九州，独往独来，是谓独有。","《庄子》","To journey through every corner of the world, moving freely on one's own terms, is to truly belong to oneself.","Zhuangzi"
+60,"大知闲闲，小知间间；大言炎炎，小言詹詹。","《庄子》","The truly wise exude a calm simplicity, while the narrow‐minded are entangled in trivial chatter.","Zhuangzi"
+61,"日出而作，日入而息。逍遥于天地之间，而心意自得。","《庄子》","Rise with the sun to labor, and rest with its setting; in the boundless expanse of nature, one finds true inner freedom.","Zhuangzi"
+62,"举世誉之而不加劝，举世非之而不加沮。","《庄子》","Whether lauded by all or condemned by many, the wise remain unmoved, true to their own path.","Zhuangzi"
+63,"福轻乎羽，莫之知载；祸重乎地，莫之知避。","《庄子》","Good fortune is as light as a feather, barely noticed in its passing, while calamity weighs as heavily as the ground beneath us.","Zhuangzi"
+64,"肌肤若冰雪，淖约若处子；不食五谷，吸风饮露；乘云气，御飞龙，而游乎四海之外。","《庄子》","Possessing a purity like ice and snow, with a gentle and unassuming grace, one can thrive on minimal sustenance, riding the winds and exploring realms beyond the ordinary.","Zhuangzi"
+65,"德不孤，必有邻。","《论语》","Virtue never stands alone—it inevitably draws kindred spirits.","Analects"
+66,"不患人之不己知，患不知人也。","《论语》","Instead of fretting over being misunderstood, concern yourself with truly understanding those around you.","Analects"
+67,"礼之用，和为贵。","《论语》","In the practice of propriety, harmony is the highest value.","Analects"
+68,"己所不欲，勿施于人。","《论语》","Never do to others what you would not want done to you.","Analects"
+69,"君子周而不比，小人比而不周。","《论语》","A gentleman treats all with fairness without favoring a clique, unlike the petty who form narrow alliances.","Analects"
+70,"发愤忘食，乐以忘忧，不知老之将至云尔。","《论语》","When inspired, one loses track of hunger and cares, so absorbed in purpose that even aging seems but a distant thought.","Analects"
+71,"三军可夺帅也，匹夫不可夺志也。","《论语》","While commanders may be overthrown, an individual’s resolve remains unyielding.","Analects"
+72,"知者乐水，仁者乐山；知者动，仁者静；知者乐，仁者寿。","《论语》","The wise find refreshment in flowing water, while the virtuous are at home among mountains; action for some, calm for others, leading to lasting fulfillment.","Analects"
+73,"巧言令色，鲜矣仁。","《论语》","Smooth talk and showy manners rarely conceal genuine kindness.","Analects"
+74,"君子坦荡荡，小人长戚戚。","《论语》","A gentleman’s heart is open and unburdened, while a small‐minded person is perpetually weighed down by worry.","Analects"
+75,"君子不可小知而可大受也，小人不可大受而可小知也。","《论语》","A gentleman's depth should never be underestimated, for he can shoulder great responsibilities; conversely, the petty, despite small insights, are incapable of handling much.","Analects"
+76,"自古皆有死，民无信不立。","《论语》","Death is certain for all, but a society without trust will never endure.","Analects"
+77,"君子不以言举人，不以人废言。","《论语》","A gentleman values ideas on their merit, neither elevating a person’s words unjustly nor dismissing them because of their source.","Analects"
+78,"益者三友，损者三友。友直，友谅，友多闻，益矣；友便辟，友善柔，友便佞，损矣。","《论语》","Surround yourself with friends who are honest, forgiving, and well‐informed, and avoid those whose flattery and self‐interest bring you down.","Analects"
+79,"君子不器。","《论语》","A true gentleman is not confined to a single role or function.","Analects"
+80,"知者不惑，仁者不忧，勇者不惧。","《论语》","The wise see clearly, the kind‐hearted remain untroubled, and the courageous face fears without hesitation.","Analects"
+81,"里仁为美，择不处仁，焉得知？","《论语》","True beauty is found in a community of kindness—if you do not choose such a place, how can you ever know its value?","Analects"
+82,"见义不为，无勇也。","《论语》","Not standing up for what is just reveals a deficiency in bravery.","Analects"
+83,"岁寒，然后知松柏之后凋也。","《论语》","It is in the depths of winter that the steadfastness of the pine and cypress is revealed.","Analects"
+84,"孝弟也者，其为仁之本与。","《论语》","Respect for one’s parents and siblings forms the very cornerstone of true virtue.","Analects"
+85,"温故而知新，可以为师矣。","《论语》","By reflecting on the past to uncover new insights, one earns the role of a mentor.","Analects"
+86,"吾日三省吾身：为人谋而不忠乎?与朋友交而不信乎?传不习乎?","《论语》","I reflect on myself three times a day: Have I been loyal in my actions, trustworthy among friends, and diligent in learning?","Analects"
+87,"名不正，则言不顺;言不顺，则事不成。","《论语》","When titles and words are misaligned, actions falter—clarity in naming and speech is key to success.","Analects"
+88,"人而无信，不知其可也。","《论语》","Without trust, a person cannot stand—integrity is indispensable.","Analects"
+89,"躬自厚而薄责于人，则远怨矣。","《论语》","If you are rigorous with yourself yet forgiving of others, you will keep animosity at bay.","Analects"
+90,"君子之过也，如日月之食焉。过也，人皆见之；更也，人皆仰之。","《论语》","A noble person's mistakes are as apparent as an eclipse, yet when they make amends, their rectitude shines, earning universal respect.","Analects"
+91,"其身正，不令而行；其身不正，虽令不从。","《论语》","When a person's character is upright, their influence is felt without coercion; if not, even commands lose their power.","Analects"
+92,"吾十有五而志于学，三十而立，四十而不惑，五十而知天命，六十而耳顺，七十而从心所欲，不逾距。","《论语》","I devoted my youth to learning, established myself by thirty, found clarity at forty, embraced destiny at fifty, listened with ease at sixty, and by seventy, I followed my heart while respecting boundaries.","Analects"
+93,"往者不可谏，来者犹可追。","《论语》","You cannot change the past, but the future is yet to be shaped.","Analects"
+94,"不愤不启，不悱不发；举一隅不以三隅反，则不复也。","《论语》","Without a spark of enthusiasm, learning never begins; if a single clue doesn't inspire wider reflection, no further instruction will help.","Analects"
+95,"知之者不如好之者，好之者不如乐之者。","《论语》","Merely knowing is not enough—cherishing what you know, and ultimately finding joy in it, is far superior.","Analects"
+96,"不患寡而患不均，不患贫而患不安。","《论语》","It's not scarcity that troubles us, but inequality; it's not poverty we fear, but the instability it breeds.","Analects"
+97,"工欲善其事，必先利其器。","《论语》","To excel in any endeavor, one must first prepare the proper tools.","Analects"
+98,"当仁不让于师。","《论语》","When it comes to doing what is right, one should never defer to another, not even a mentor.","Analects"
+99,"无欲速，无见小利。欲速则不达，见小利则大事不成。","《论语》","Avoid the urge for rapid results or minor gains—haste undermines success, and focusing on small profits can derail major accomplishments.","Analects"
+100,"学而不思则罔，思而不学则殆。","《论语》","Study without thought leads nowhere, while thought without study is dangerous.","Analects"
+101,"知之为知之，不知为不知，是知也。","《论语》","Recognizing what you know and admitting what you do not is the essence of wisdom.","Analects"
+102,"君子成人之美，不成人之恶。","《论语》","A gentleman strives to enhance others' virtues, never to magnify their vices.","Analects"
+103,"饭疏食饮水，曲肱而枕之，乐亦在其中矣。不义而富且贵，于我如浮云。","《论语》","Simple meals and humble rest can bring true contentment; riches and titles without integrity are as fleeting as clouds.","Analects"
+104,"夫仁者，己欲立而立人，己欲达而达人。","《论语》","A truly kind soul lifts others as they seek to elevate themselves, and opens paths for their success.","Analects"
+105,"仁远乎哉？我欲仁，斯仁至矣。","《论语》","Benevolence is never out of reach; when you set your heart on it, it will find you.","Analects"
+106,"志士仁人，无求生以害仁，有杀身以成仁。","《论语》","Those of noble spirit will never compromise virtue for survival—they are even prepared to sacrifice themselves to uphold it.","Analects"
+107,"君子欲讷于言而敏于行。","《论语》","A gentleman speaks with caution and acts with prompt efficiency.","Analects"
+108,"发愤忘食，乐以忘忧，不知老之将至云尔。","《论语》","So absorbed in purpose that hunger is forgotten and joy overcomes sorrow, one becomes unaware of the coming of old age.","Analects"
+109,"子在川上曰：“逝者如斯夫，不舍昼夜。”","《论语》","Standing by the river, he remarked, 'Time flows ceaselessly, without pause for day or night.'","Analects"
+110,"君子和而不同，小人同而不和。","《论语》","A noble person values harmonious differences, whereas a small‐minded one merely imitates without genuine accord.","Analects"
+111,"人无远虑，必有近忧。","《论语》","Without foresight, one is bound to face troubles in the near term.","Analects"
+112,"君子求诸己，小人求诸人。","《论语》","The noble hold themselves accountable, while the petty demand change from others.","Analects"
+113,"巧言乱德。小不忍则乱大谋。","《论语》","Flattering words can distort true virtue, and intolerance in minor issues can derail grand schemes.","Analects"
+114,"知其不可而为之。","《论语》","Knowing the limits, yet daring to act regardless—that is true audacity.","Analects"
+115,"道不同，不相为谋。","《论语》","If our paths diverge, we cannot truly collaborate.","Analects"
+116,"三人行，必有我师焉，择其善者而从之，择其不善者而改之。","《论语》","In any company, there is always a teacher—learn from the best, and adjust when you see faults.","Analects"
+117,"其进锐者，其退速。","《孟子》","When pressing forward, do so with vigor, but when retreating, do it with measured care.","Mencius"
+118,"天子不仁,不保四海；诸侯不仁,不保社稷；卿大夫不仁,不保宗庙；士庶人不仁,不保四体。","《孟子》","Rulers, nobles, and officials alike, with their indifference, fail to safeguard the realm and its people.","Mencius"
+119,"君子不怨天,不尤人。","《孟子》","A true gentleman takes no offense at fate, nor does he blame others for his misfortune.","Mencius"
+120,"富贵不能淫,贫贱不能移,威武不能屈,此之谓大丈夫。","《孟子》","One who is not seduced by wealth, not swayed by poverty, and unbowed by might is the epitome of a real man.","Mencius"
+121,"故天将降大任于是人也,必先苦其心志,劳其筋骨,饿其体肤,空乏其心,行拂乱其所为,所以动心忍性,曾益其所不能。","《孟子》","When fate calls for great responsibility, it tempers the chosen with hardship and toil, expanding what they thought possible.","Mencius"
+122,"老吾老以及人之老,幼吾幼以及人之幼。","《孟子》","Honor your elders and extend that reverence to all; nurture your young and share that care universally.","Mencius"
+123,"爱人者,人恒爱之；敬人者,人恒敬之。","《孟子》","Those who show genuine love receive love in return, and respect begets respect.","Mencius"
+124,"仁者无敌。","《孟子》","True kindness renders one unbeatable.","Mencius"
+125,"君之视臣如手足,则臣视君如腹心；君之视臣如犬马,则臣视君如国人；君之视臣如土芥,则臣视君如寇仇。","《孟子》","When a ruler values his officials as dearly as his own limbs, they respond with loyalty; treat them as mere tools, and they will see you as unworthy.","Mencius"
+126,"贤者在位,能者在职。","《孟子》","Those who are virtuous take their rightful positions, while those with ability earn their roles.","Mencius"
+127,"祸福无不自己求之者。","《孟子》","Both misfortune and fortune come from the choices one makes.","Mencius"
+128,"自暴者,不可与有言也；自弃者,不可与有为也。","《孟子》","Those who neglect themselves are not worth engaging with, and those who give up on themselves are unfit for success.","Mencius"
+129,"不挟长,不挟贵,不挟兄弟而友。","《孟子》","True friendship is not forged by clinging to the powerful or one's kin—it must stand on its own merit.","Mencius"
+130,"贤者以其昭昭使人昭昭,今以其昏昏使人昭昭。","《孟子》","In times past, a wise person’s clarity inspired others; nowadays, even those muddled in confusion seem to set the standard.","Mencius"
+131,"君子有三乐,而王天下不与存焉.父母俱在,兄弟无故,一乐也；仰不愧于天,俯不怍于人,二乐也；得天下英才而教育之,三乐也。","《孟子》","A noble soul finds joy in three things: a harmonious family, a clear conscience before both heaven and man, and the privilege of nurturing talented minds.","Mencius"
+132,"穷则独善其身,达则兼善天下。","《孟子》","In times of scarcity, perfect your own virtue; when fortune allows, extend your goodness to all.","Mencius"
+133,"尽信《书》,不如无《书》。","《孟子》","Blindly accepting written texts can be more harmful than having none at all.","Mencius"
+134,"惟仁者宜在高位。不仁而在高位，是播其恶于众也。","《孟子》","Only those with true kindness deserve high office; if the unvirtuous ascend, they corrupt the masses.","Mencius"
+135,"得道者多助,失道者寡助，寡助之至,亲戚畔之,多助之至,天下顺之。","《孟子》","He who walks the righteous path garners widespread support, while those who deviate find themselves isolated, even by family.","Mencius"
+136,"夫人必自侮,然后人侮之；家必自毁,而后人毁之；国必自伐,而后人伐之。","《孟子》","If one degrades oneself, others will follow suit; a household that self‐destructs invites ruin, and a nation that undermines itself is doomed to collapse.","Mencius"
+137,"生于忧患而死于安乐也。","《孟子》","Adversity fuels growth, while complacency leads to downfall.","Mencius"
+138,"顺天者成，逆天者亡。","《孟子》","Succeed by aligning with the natural order, but defy it and face ruin.","Mencius"
+139,"人若无志，与禽兽同类。","《孟子》","Without ambition, one is no different from the creatures of the wild.","Mencius"
+140,"人之相识，贵在相知，人之相知，贵在知心。","《孟子》","It’s not mere acquaintance but deep mutual understanding that is truly valuable.","Mencius"
+141,"夫天未欲平治天下也；如欲平治天下，当今之世，舍我其谁也？","《孟子》","If it falls to the heavens to govern the world, then who but I would dare to restore order?","Mencius"
+142,"有不虞之誉，有求全之毁。","《孟子》","Unexpected acclaim and the pursuit of flawlessness can just as easily turn into harsh reproach.","Mencius"
+143,"权，然后知轻重；度，然后知长短。","《孟子》","By employing careful judgment, one learns the true value and scale of things.","Mencius"
+144,"其为人也小有才，未闻君子之大道也，则足以杀其躯而已矣。","《孟子》","When a person of modest ability fails to grasp the true path, their potential becomes a weapon against themselves.","Mencius"
+145,"父子有亲，君臣有义，夫妇有别，长幼有序，朋友有信。","《孟子》","Family bonds, the duty between ruler and minister, the distinct roles of spouses, the respect for age, and the trust among friends all form the fabric of a harmonious society.","Mencius"
+146,"出于其类，拔乎其萃，自生民以来，未有盛于孔子也。","《孟子》","Among his peers and chosen from the very best, none in history has shone brighter than Confucius.","Mencius"
+147,"人告之以有过，则喜。","《孟子》","When faults are pointed out, a wise person welcomes the correction with gratitude.","Mencius"
+148,"国君好仁,天下无敌焉。","《孟子》","A ruler who cherishes kindness stands unmatched across the realm.","Mencius"
+149,"养心莫善于寡欲。","《孟子》","To nurture the soul, few desires are best.","Mencius"
+150,"大人者，不失其赤子之心者也。","《孟子》","A truly great person retains the pure, uncorrupted heart of childhood.","Mencius"
+151,"人有不为也，而后可以有为。","《孟子》","By choosing what not to do, one creates the space for what can be accomplished.","Mencius"
+152,"天下熙熙，皆为利来；天下攘攘，皆为利往。","《史记》","The world is abuzz with activity, all driven by the lure of gain and the pursuit of profit.","Records of the Grand Historian"
+153,"桃李不言，下自成蹊。","《史记》","Even without a word, the fruits of virtue carve their own path.","Records of the Grand Historian"
+154,"飞鸟尽，良弓藏，狡兔死，走狗烹，敌国破，谋臣亡。","《史记》","Once a purpose is fulfilled, even the finest tool is discarded—when the challenge is over, the loyal helper is forgotten.","Records of the Grand Historian"
+155,"以权利合者，权利尽而交疏。","《史记》","Bonds forged for gain dissolve when the power or profit that held them together vanishes.","Records of the Grand Historian"
+156,"众口铄金，积毁销骨。","《史记》","The clamor of many can erode even the strongest metal, just as constant criticism can wear down a reputation.","Records of the Grand Historian"
+157,"人弃我取，人取我与。","《史记》","I seize what others neglect, and generously share what others claim.","Records of the Grand Historian"
+158,"家累千金，坐不垂堂。","《史记》","Even a fortune amassed can weigh a family down, preventing the warmth of home from flourishing.","Records of the Grand Historian"
+159,"当断不断，反受其乱。","《史记》","Hesitation in decisive moments only invites disorder.","Records of the Grand Historian"
+160,"千羊之皮，不如一狐之腋；千人之诺诺，不如一士之谔谔。","《史记》","A thousand sheep's hide is no match for a fox’s pelt; a sea of meek agreement pales beside the honest declaration of a true man.","Records of the Grand Historian"
+161,"相马失之瘦，相士失之贫。","《史记》","Failing to appreciate a horse’s true build, or a man’s hidden worth, leads to grave errors.","Records of the Grand Historian"
+162,"能行之者未必能言，能言之者未必能行。","《史记》","The skill to execute does not always come with the gift of speech, and vice versa.","Records of the Grand Historian"
+163,"智者千虑，必有一失；愚者千虑，必有一得。","《史记》","In a thousand plans, even the wise may falter, while even the fool might occasionally strike gold.","Records of the Grand Historian"
+164,"前虑不定，后有大患。","《史记》","Uncertainty in planning today foretells serious troubles tomorrow.","Records of the Grand Historian"
+165,"规小节者不能成荣名，恶小耻者不能立大功。","《史记》","Obsessing over trivialities hinders lasting honor, while an excessive aversion to minor flaws stifles great achievements.","Records of the Grand Historian"
+166,"家贫则思良妻，国乱则思良相。","《史记》","In hardship, a family yearns for a virtuous partner; in turmoil, a nation looks for a wise advisor.","Records of the Grand Historian"
+167,"运筹策帷帐之中，决胜于千里之外。","《史记》","Decisive strategies crafted in quiet counsel can determine battles won thousands of miles away.","Records of the Grand Historian"
+168,"燕雀安知鸿鹄之志哉！","《史记》","How can the lowly sparrow ever comprehend the lofty aspirations of a swan?","Records of the Grand Historian"
+169,"王侯将相宁有种乎？","《史记》","Is it destiny alone that makes kings and generals, or is greatness cultivated beyond mere birthright?","Records of the Grand Historian"
+170,"富而不骄，贵而不舒。","《史记》","True wealth remains humble, and genuine nobility is never self‐indulgent.","Records of the Grand Historian"
+171,"善用兵者，不以短击长，而以长击短。","《史记》","A master of warfare wins not by meeting strength with strength, but by turning the enemy’s weaknesses to his advantage.","Records of the Grand Historian"
+172,"人方为刀俎，我为鱼肉。","《史记》","When people are seen as mere ingredients for others’ ambitions, one’s fate is that of the helpless prey.","Records of the Grand Historian"
+173,"得黄金百，不如得季布一诺。","《史记》","A single promise from a man of honor outweighs a hundred pieces of gold.","Records of the Grand Historian"
+174,"一死一生，乃知交情；一贫一富，乃知交态；一贵一贱，交情乃见。","《史记》","It is in the extremes of life—between life and death, wealth and poverty, honor and disgrace—that true friendship is revealed.","Records of the Grand Historian"
+175,"士为知己者死，女为悦己者容。","《史记》","A loyal man may sacrifice his life for a true friend, just as a devoted woman graces herself for one who cherishes her.","Records of the Grand Historian"
+176,"骐骥之跼躅，不如驽马之安步。","《史记》","The restless stride of a prized steed is less valuable than the steady pace of a reliable workhorse.","Records of the Grand Historian"
+177,"项庄舞剑，意在沛公。","《史记》","A display may mask true intentions, as when a dancer wields a sword with a covert purpose.","Records of the Grand Historian"
+178,"物有必至，事有固然。","《史记》","Every thing has its destined course, and every event unfolds as it must.","Records of the Grand Historian"
+179,"恃德者昌，恃力者亡。","《史记》","Trust in virtue leads to prosperity, while dependence on brute strength invites downfall.","Records of the Grand Historian"
+180,"将在军，君命有所不受。","《史记》","Even in command, a leader may choose to defy orders that undermine common sense.","Records of the Grand Historian"
+181,"鸟之将死，其鸣也哀；人之将死，其言也善。","《史记》","In its final moments, a bird’s song turns mournful; similarly, a man’s last words are often gentle and true.","Records of the Grand Historian"
+182,"才者，德之资也；德者，才之帅也。","《史记》","Talent feeds on virtue, while virtue directs talent to its rightful path.","Records of the Grand Historian"
+183,"责其所难，则其易者不劳而正；补其所短，则其长者不功而遂。","《资治通鉴》","When you focus on the hard parts, the simple things fall into place effortlessly; and by addressing weaknesses, your strengths can flourish without extra strain.","Zizhi Tongjian"
+184,"兼听则明，偏信则暗。","《资治通鉴》","When you listen to every perspective, wisdom prevails; selective hearing only breeds ignorance.","Zizhi Tongjian"
+185,"国虽大，好战必亡；天下虽平，亡战必危。","《资治通鉴》","A country, no matter how mighty, that revels in conflict is doomed, and even in peace, the absence of prudence invites peril.","Zizhi Tongjian"
+186,"家贫思良妻，国乱思良相。","《资治通鉴》","In hardship, a family yearns for a virtuous partner; in turmoil, a nation looks for a wise advisor.","Zizhi Tongjian"
+187,"面从后言，古人所诫。","《资治通鉴》","Pay heed to the ancient warning: comply outwardly, but avoid empty agreement that hides dissent.","Zizhi Tongjian"
+188,"怒者常情，笑者不可测也。","《资治通鉴》","Anger is an expected human emotion, yet a genuine smile can be as enigmatic as the wind.","Zizhi Tongjian"
+189,"明主用人也，使能者不敢遗其力，而不能者不得处其任。","《资治通鉴》","A discerning leader assigns roles so that those with true ability are challenged, while those less capable are not entrusted with heavy burdens.","Zizhi Tongjian"
+190,"老禾不早杀，余种秽良田。","《资治通鉴》","Fail to clear the old crop in time, and the new seeds will be tainted—timely action preserves quality.","Zizhi Tongjian"
+191,"君子陷人危，必同其难，岂可以独生乎？","《资治通鉴》","A true gentleman, when one falls into peril, stands by his comrade; one does not endure hardship alone.","Zizhi Tongjian"
+192,"德者人之所严，而才者人之所爱；爱者易亲，严者易疏，是以察者多蔽于才而遗于德。","《资治通鉴》","People revere true virtue and cherish genuine talent—yet, sometimes, strictness can distance even the gifted, leading judges to favor character over raw ability.","Zizhi Tongjian"
+193,"能择善者而从之，美自归己。","《资治通鉴》","When you align with what is good, beauty and excellence naturally gravitate towards you.","Zizhi Tongjian"
+194,"木心不直，则脉理皆邪，弓虽劲而发矢不直。","《资治通鉴》","If the inner nature is misaligned, then even the strongest effort will not yield a straight result.","Zizhi Tongjian"
+195,"好胜人，耻闻过，骋辩给，眩聪明，厉威严，恣强愎，此六者，君上之弊也。","《资治通鉴》","Craving triumph, shunning admission of error, engaging in endless debate, flaunting cleverness, enforcing harsh discipline, and being obstinately unyielding—these six faults plague leaders.","Zizhi Tongjian"
+196,"凡论人，必先称其所长，则所短不言自见。","《资治通鉴》","When evaluating others, highlight their strengths, and their shortcomings will naturally fade into the background.","Zizhi Tongjian"
+197,"舟顺水之道乃浮，违则没；君得人之情乃固，失则危。","《资治通鉴》","A vessel that aligns with the current stays afloat, while one that resists is doomed; similarly, a leader who connects with his people remains secure, but without that bond, peril ensues.","Zizhi Tongjian"
+198,"为贵人当举纲维，何必事事详细！","《资治通鉴》","Great leaders should emphasize overarching principles rather than getting bogged down in every detail.","Zizhi Tongjian"
+199,"论至德者不和于俗，成大功者不谋于众。","《资治通鉴》","The truly virtuous defy common trends, and those who accomplish greatness do so by following their own insight, not the crowd.","Zizhi Tongjian"
+200,"法忌烦苛，治贵清约。","《资治通鉴》","Rules should shun needless complexity, and governance thrives on simplicity and restraint.","Zizhi Tongjian"
+201,"仁者不以盛衰改节，义者不以存亡易心。","《资治通鉴》","A kind soul remains constant through highs and lows, and a just heart stays true regardless of circumstances.","Zizhi Tongjian"
+202,"凡百事之成也在敬之，其败有必在慢之。","《资治通鉴》","Every success is built on respect and careful effort, while neglect and haste are the seeds of failure.","Zizhi Tongjian"
+203,"形者，言其大体得失之数也；势者，言其临时之宜、进退之机也；情者，言其心志可否之实也。","《资治通鉴》","The visible form reveals the balance of gains and losses, circumstance dictates the right moment for action, and the inner will determines what is truly possible.","Zizhi Tongjian"
+204,"聪明流通者戒于太察，寡闻少见者戒于壅蔽。","《资治通鉴》","The astute should be cautious of overthinking, while the less informed must guard against the pitfalls of limited perspective.","Zizhi Tongjian"
+205,"得财失行，吾所不取。","《资治通鉴》","I reject any gain that compromises my principles.","Zizhi Tongjian"
+206,"去就以道，可谓君子矣。","《资治通鉴》","A true gentleman makes choices in accordance with the Way, whether to advance or retreat.","Zizhi Tongjian"
+207,"不诚于前而曰诫于后，众必疑而不信矣。","《资治通鉴》","When one is not genuine upfront but later issues warnings, trust is irrevocably lost.","Zizhi Tongjian"
+208,"夫登进以懋庸，黜退以惩过，二者迭用，理如循环。","《资治通鉴》","By rewarding merit and disciplining mistakes in turn, a balanced cycle of governance is maintained.","Zizhi Tongjian"
+209,"德胜才，谓之君子；才胜德，谓之小人。","《资治通鉴》","A person whose virtue outweighs his talent is a true gentleman; when raw ability overshadows character, one is reduced to pettiness.","Zizhi Tongjian"
+210,"凡人之情，穷则思变。","《资治通鉴》","When faced with adversity, it is only natural for people to yearn for change.","Zizhi Tongjian"
+211,"夫表曲者景必邪，源清者流必洁。","《资治通鉴》","A distorted appearance clouds the truth, but a clear origin ensures pure outcomes.","Zizhi Tongjian"
+212,"立功者患信义不著，不患名位不高。","《资治通鉴》","Ambitious individuals fret more that their loyalty and integrity go unnoticed than that their rank is low.","Zizhi Tongjian"
+213,"口说不如身逢，耳闻不如目睹。","《资治通鉴》","Words pale in comparison to firsthand experience, just as hearsay cannot match what one sees.","Zizhi Tongjian"
+214,"没齿而无怨言，圣人以为难。","《资治通鉴》","Living without a single complaint is a challenge even the wisest find formidable.","Zizhi Tongjian"
+215,"欲知其人，观其朋友。","《资治通鉴》","To understand someone's character, look at the company they keep.","Zizhi Tongjian"
+216,"短于从善，故至于败。","《资治通鉴》","Neglecting to embrace virtue inevitably leads to failure.","Zizhi Tongjian"
+217,"币厚言甘，古人所畏也。","《资治通鉴》","The ancients dreaded lavish bribes and honeyed words that masked ulterior motives.","Zizhi Tongjian"
+218,"夫不察事之是非而悦人赞己，暗莫甚焉；不度理之所在而阿谀求容，谄莫甚焉。","《资治通鉴》","To ignore the truth of matters while reveling in praise is profoundly misguided; to flatter without understanding the underlying principles is the very essence of deceit.","Zizhi Tongjian"
+219,"丈夫一言许人，千金不易。","《资治通鉴》","A man's promise is as precious and unbreakable as a treasure worth a thousand gold coins.","Zizhi Tongjian"
+220,"俭约，所以彰其美也。","《资治通鉴》","Simplicity and restraint are the hallmarks of genuine elegance.","Zizhi Tongjian"
+221,"明者销祸于未萌,智者图患于将来","《资治通鉴》","The insightful avert problems before they sprout, and the wise prepare for future challenges.","Zizhi Tongjian"
+222,"任贤必治，任不肖必乱。","《资治通鉴》","When you empower the capable, order prevails; entrusting the unworthy only invites disorder.","Zizhi Tongjian"
+223,"汝知稼穑之艰难，则常有斯饭矣。","《资治通鉴》","Once you grasp the toil of the harvest, every meal becomes a cherished reward.","Zizhi Tongjian"
+224,"人不可以求备，必舍其所短，取其所长。","《资治通鉴》","No one can be flawless—focus on your strengths and let go of what holds you back.","Zizhi Tongjian"
+225,"卧榻之侧，岂容他人鼾睡乎？","《资治通鉴》","One would never tolerate a disruptive presence right at one’s side.","Zizhi Tongjian"
+226,"君子挟才以为善，小人挟才以为恶。","《资治通鉴》","A noble person harnesses talent to do good, whereas the base‐minded exploit it for ill.","Zizhi Tongjian"
+227,"夫礼，辨贵贱，序亲疏，裁群物，制庶事，非名不著，非器不形。","《资治通鉴》","Ritual and propriety establish order—defining status, relationships, and even the form of things, without which nothing holds meaning.","Zizhi Tongjian"
+228,"见黄雀而忘深阱，智者所不为","《资治通鉴》","A wise person never overlooks a hidden snare, even in the pursuit of a small gain.","Zizhi Tongjian"
+229,"不得道以持之，则大危也，大累也，有之不如无之","《资治通鉴》","Clinging to power without the guiding Way brings peril and burdens—sometimes, nothing is better than what is held without righteousness.","Zizhi Tongjian"
+230,"君子小人之不相容，犹冰炭之不可同器而处也，故君子得位则斥小人，小人得势则排君子。","《资治通鉴》","Just as ice cannot reside with fire, the noble and the petty are fundamentally incompatible—each will eventually push the other aside.","Zizhi Tongjian"
+231,"千钧之弩，不为鼷鼠发机；万石之钟，不以莛撞起音。","《资治通鉴》","A mighty weapon isn’t activated by a trivial force, nor does a colossal clock sound with the lightest touch.","Zizhi Tongjian"
