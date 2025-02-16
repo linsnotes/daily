@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daily Wisdom</title>
+  <!-- GoatCounter script for counting pageviews -->
+  <script data-goatcounter="https://linsnotes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -127,7 +130,19 @@
       cursor: not-allowed;
       transform: none;
     }
-    
+
+    #visitor-counter {
+      font-size: 1em;
+      margin: 5px 0;
+      text-align: center;
+      color: #333;
+    }
+
+    #visitor-counter #pageviews {
+      font-weight: bold;
+      color: #000;
+    }
+
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -183,6 +198,10 @@
       <select id="csv-select" class="nav-btn"></select>
       <button id="next-btn" class="nav-btn">Next</button>
     </div>
+    <div id="visitor-counter">
+      Welcome! You’re visitor #<span id="pageviews">Loading...</span>
+    </div>
+
   </div>
 
   <script>
@@ -363,6 +382,30 @@
       // Start by populating dropdown from YAML configuration and loading default quotes file
       populateDropdownFromYAML();
       loadQuotes(currentFile);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const pv = document.getElementById('pageviews');
+
+        if (pv !== null) {
+            // Strip trailing slash (if any) so the path matches GoatCounter
+            const uri = location.pathname.replace(/\/$/, '');
+            // Build the JSON endpoint URL for your domain
+            const url = `https://linsnotes.goatcounter.com/counter/${encodeURIComponent(uri)}.json`;
+
+            fetch(url)
+                .then((response) => response.json())
+                .then((data) => {
+                    // 'data.count' comes back as a string with possible whitespace
+                    const count = data.count.replace(/\s/g, '');
+                    // Format it with commas, etc.
+                    pv.innerText = new Intl.NumberFormat().format(count);
+                })
+                .catch((error) => {
+                    // Fallback if something goes wrong
+                    pv.innerText = '1';
+                });
+        }
     });
   </script>
 </body>
