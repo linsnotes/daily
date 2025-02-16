@@ -212,6 +212,14 @@
   </div>
 
   <script>
+    // Helper function to get a date string in YYYY-MM-DD format using local date methods.
+    function getLocalDateString(date) {
+      const year = date.getFullYear();
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      const day = date.getDate().toString().padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
       let currentDate;
       let quotes = [];
@@ -330,10 +338,10 @@
         const datePicker = document.getElementById('date-picker');
         datePicker.min = `${year}-01-01`;
         if (next_btn_lock) {
-          datePicker.max = currentDate.toISOString().split("T")[0];
+          datePicker.max = getLocalDateString(currentDate);
         }
         const displayDate = new Date(year, 0, selectedDay);
-        datePicker.value = displayDate.toISOString().split("T")[0];
+        datePicker.value = getLocalDateString(displayDate);
   
         // When the user selects a date, convert it to the day-of-year and update display.
         datePicker.addEventListener('change', function(){
@@ -341,7 +349,7 @@
           // If next_btn_lock is true, restrict future dates.
           if (next_btn_lock && chosenDate > currentDate) {
             chosenDate = currentDate;
-            this.value = currentDate.toISOString().split("T")[0];
+            this.value = getLocalDateString(currentDate);
           }
           const startOfYear = new Date(chosenDate.getFullYear(), 0, 0);
           const diff = chosenDate - startOfYear;
@@ -374,7 +382,7 @@
         }
   
         // Keep the date picker in sync with the selected date.
-        document.getElementById('date-picker').value = displayDate.toISOString().split("T")[0];
+        document.getElementById('date-picker').value = getLocalDateString(displayDate);
   
         // Update navigation button states
         document.getElementById('prev-btn').disabled = selectedDay <= 1;
