@@ -7,10 +7,7 @@
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <style>
     /* Animated gradient background */
     body {
@@ -194,11 +191,25 @@
       const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
       const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   
-      // Load quotes data from the XLSX file
-      fetch('quotes.xlsx')
-        .then(response => response.arrayBuffer())
+      // Specify the filename. Change to 'quotes.xlsx' if you wish to use XLSX.
+      const fileName = 'quotes.csv';
+  
+      // Load quotes data from the file (CSV or XLSX)
+      fetch(fileName)
+        .then(response => {
+          if (fileName.endsWith('.csv')) {
+            return response.text();
+          } else {
+            return response.arrayBuffer();
+          }
+        })
         .then(data => {
-          const workbook = XLSX.read(data, { type: 'array' });
+          let workbook;
+          if (typeof data === 'string') {
+            workbook = XLSX.read(data, { type: 'string' });
+          } else {
+            workbook = XLSX.read(data, { type: 'array' });
+          }
           const firstSheetName = workbook.SheetNames[0];
           const worksheet = workbook.Sheets[firstSheetName];
           // Convert the first sheet to JSON. Ensure that missing cells get a default value.
@@ -211,13 +222,13 @@
         const year = currentDate.getFullYear();
         const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
         
-        // Calculate day of year
+        // Calculate day of year based on current date
         const start = new Date(year, 0, 0);
         const diff = currentDate - start;
         const oneDay = 1000 * 60 * 60 * 24;
         selectedDay = Math.floor(diff / oneDay);
         
-        // Handle non-leap years if day exceeds 365/366
+        // Handle non-leap years if day exceeds maximum
         if (!isLeapYear && selectedDay >= 366) selectedDay = 1;
         if (!isLeapYear && selectedDay > 365) selectedDay = 365;
   
@@ -227,10 +238,9 @@
   
       // Update the inner content of the page
       function updateContent() {
-        // Format and display the current date
-        const dateString = `${currentDate.getDate().toString().padStart(2, '0')} ${
-          monthNames[currentDate.getMonth()]
-        } ${currentDate.getFullYear()}, ${dayNames[currentDate.getDay()]}`;
+        // Compute display date based on selectedDay
+        const displayDate = new Date(currentDate.getFullYear(), 0, selectedDay);
+        const dateString = `${displayDate.getDate().toString().padStart(2, '0')} ${monthNames[displayDate.getMonth()]} ${displayDate.getFullYear()}, ${dayNames[displayDate.getDay()]}`;
         document.getElementById('current-date').textContent = dateString;
         document.getElementById('quote-number').textContent = `#${selectedDay}`;
   
