@@ -213,7 +213,8 @@
       let selectedDay = 1;
       let initialized = false;
       let currentFile = 'quotes.csv';
-      
+      let next_btn_lock = true; // When true, "Next" button is locked to today's quote
+
       // Timezone handling
       try {
         currentDate = new Date();
@@ -345,7 +346,7 @@
   
         // Update navigation button states
         document.getElementById('prev-btn').disabled = selectedDay <= 1;
-        document.getElementById('next-btn').disabled = selectedDay >= getMaxDay();
+        document.getElementById('next-btn').disabled = next_btn_lock ? (selectedDay >= getMaxDay()) : (selectedDay >= cycleLength);
       }
   
       // Update display with a smooth fade transition
@@ -369,7 +370,14 @@
         });
   
         document.getElementById('next-btn').addEventListener('click', () => {
-          if (selectedDay < getMaxDay()) {
+          let maxAllowed;
+          if (next_btn_lock) {
+            maxAllowed = getMaxDay();
+          } else {
+            const cycleLength = quotes.length >= 365 ? 365 : quotes.length;
+            maxAllowed = cycleLength;
+          }
+          if (selectedDay < maxAllowed) {
             selectedDay++;
             updateDisplay();
           }
