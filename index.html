@@ -346,7 +346,7 @@
   
         // Update navigation button states
         document.getElementById('prev-btn').disabled = selectedDay <= 1;
-        document.getElementById('next-btn').disabled = next_btn_lock ? (selectedDay >= getMaxDay()) : (selectedDay >= cycleLength);
+        document.getElementById('next-btn').disabled = next_btn_lock ? (selectedDay >= getMaxDay()) : false;
       }
   
       // Update display with a smooth fade transition
@@ -370,14 +370,12 @@
         });
   
         document.getElementById('next-btn').addEventListener('click', () => {
-          let maxAllowed;
           if (next_btn_lock) {
-            maxAllowed = getMaxDay();
+            if (selectedDay < getMaxDay()) {
+              selectedDay++;
+              updateDisplay();
+            }
           } else {
-            const cycleLength = quotes.length >= 365 ? 365 : quotes.length;
-            maxAllowed = cycleLength;
-          }
-          if (selectedDay < maxAllowed) {
             selectedDay++;
             updateDisplay();
           }
