@@ -170,6 +170,7 @@
       .nav-btn {
         width: 5rem;
       }
+    }
   </style>
   <!-- Include SheetJS library from CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -328,15 +329,18 @@
         document.getElementById('current-date').textContent = dateString;
         document.getElementById('quote-number').textContent = `#${selectedDay}`;
   
-        // Find the current quote (convert q.No to Number in case it comes as a string)
-        let quote = quotes.find(q => Number(q.No) === selectedDay);
-        if (!quote && selectedDay === 366) quote = quotes[0]; // Handle year rollover
-      
-        if (quote) {
-          document.getElementById('chinese-quote').textContent = quote['Chinese'];
-          document.getElementById('english-quote').textContent = `"${quote['English']}"`;
-          document.getElementById('chinese-author').textContent = `— ${quote['Author_CL']}`;
-          document.getElementById('english-author').textContent = `— ${quote['Author_EL']}`;
+        // Cycle through quotes: use modulo arithmetic with cycle length.
+        // If the CSV has fewer than 365 rows, it will loop; if more, only the first 365 rows are used.
+        const cycleLength = quotes.length >= 365 ? 365 : quotes.length;
+        if (cycleLength > 0) {
+          const index = (selectedDay - 1) % cycleLength;
+          let quote = quotes[index];
+          if (quote) {
+            document.getElementById('chinese-quote').textContent = quote['Chinese'];
+            document.getElementById('english-quote').textContent = `"${quote['English']}"`;
+            document.getElementById('chinese-author').textContent = `— ${quote['Author_CL']}`;
+            document.getElementById('english-author').textContent = `— ${quote['Author_EL']}`;
+          }
         }
   
         // Update navigation button states
