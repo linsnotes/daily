@@ -348,13 +348,14 @@
             const config = jsyaml.load(text);
             if (config && config.csvFiles && Array.isArray(config.csvFiles)) {
               updateDropdown(config.csvFiles);
-            } else {
-              updateDropdown(['quotes.csv']);
+              // Set currentFile to the first CSV file listed in the YAML file
+              currentFile = config.csvFiles[0];
+              // Now load quotes from that file
+              loadQuotes(currentFile);
             }
           })
           .catch(err => {
-            // Fallback to default if YAML file cannot be loaded
-            updateDropdown(['quotes.csv']);
+            console.error('Error fetching CSV configuration:', err);
           });
       }
   
