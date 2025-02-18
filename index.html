@@ -365,12 +365,8 @@
           option.textContent = file.replace('.csv', '');
           dropdown.appendChild(option);
         });
-        // Set default to 'quotes.csv' if available, otherwise first option
-        if (fileList.includes('quotes.csv')) {
-          dropdown.value = 'quotes.csv';
-        } else {
-          dropdown.value = fileList[0];
-        }
+        // Set default to first option
+        dropdown.value = fileList[0];
         currentFile = dropdown.value;
       }
   
