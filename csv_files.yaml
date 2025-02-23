@@ -5,5 +5,8 @@ csvFiles:
     url: "https://docs.google.com/spreadsheets/d/1Y59fgiyFwI0OEbHyhDbEcP6-WTAfW4QqfnzC8HgKPiQ/export?format=csv&gid=0"
   - title: "成语75"
     url: "https://docs.google.com/spreadsheets/d/1Y59fgiyFwI0OEbHyhDbEcP6-WTAfW4QqfnzC8HgKPiQ/export?format=csv&gid=1836243042"
+  - title: "周易"
+    url: "https://docs.google.com/spreadsheets/d/1Y59fgiyFwI0OEbHyhDbEcP6-WTAfW4QqfnzC8HgKPiQ/export?format=csv&gid=981121442"
+
 #  - title: "classic"
 #    url: "https://raw.githubusercontent.com/linsnotes/daily/main/Chinese-Wisdom.csv"
