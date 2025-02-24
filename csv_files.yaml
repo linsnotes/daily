@@ -26,7 +26,18 @@ csvFiles:
 
   - title: "资治通鉴"
     url: "https://docs.google.com/spreadsheets/d/1Y59fgiyFwI0OEbHyhDbEcP6-WTAfW4QqfnzC8HgKPiQ/export?format=csv&gid=203455271"
+    
+  - title: "红楼梦"
+    url: "https://docs.google.com/spreadsheets/d/1Y59fgiyFwI0OEbHyhDbEcP6-WTAfW4QqfnzC8HgKPiQ/export?format=csv&gid=1282161017"
 
+  - title: "三国演义"
+    url: "https://docs.google.com/spreadsheets/d/1Y59fgiyFwI0OEbHyhDbEcP6-WTAfW4QqfnzC8HgKPiQ/export?format=csv&gid=2078819447"
+
+  - title: "西游记"
+    url: "https://docs.google.com/spreadsheets/d/1Y59fgiyFwI0OEbHyhDbEcP6-WTAfW4QqfnzC8HgKPiQ/export?format=csv&gid=1868907603"
+
+  - title: "水浒传"
+    url: "https://docs.google.com/spreadsheets/d/1Y59fgiyFwI0OEbHyhDbEcP6-WTAfW4QqfnzC8HgKPiQ/export?format=csv&gid=2001382206"
 
 #  - title: ""
 #    url: "https://docs.google.com/spreadsheets/d/1Y59fgiyFwI0OEbHyhDbEcP6-WTAfW4QqfnzC8HgKPiQ/export?format=csv&gid="
