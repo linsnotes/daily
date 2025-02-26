@@ -1,507 +1,981 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <title>朝闻道</title>
-  <!-- GoatCounter script for counting pageviews -->
-  <script data-goatcounter="https://linsnotes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字随指落</title>
   <style>
-    /* Animated gradient background */
+    /* Apple-inspired base styles */
     body {
-      font-family: 'Roboto', sans-serif;
-      background: #F5F5F7;
-      background-size: 400% 400%;
-      animation: gradientAnimation 15s ease infinite;
-      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Geneva, Verdana, Helvetica, Arial, sans-serif;
+      background-color: #fff;
       margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-    
-    .container {
-      width: 90%;
-      max-width: 800px;
-      padding: 2rem;
-      box-sizing: border-box;
-    }
-    
-    /* Updated header: use flex to align the three elements evenly */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-      opacity: 0;
-      animation: fadeIn 1s ease forwards;
-      flex-wrap: wrap;
-    }
-    
-    /* Force the left and right parts to take only as much space as needed */
-    .header > .date,
-    .header > .number {
-      flex: 0 0 auto;
-    }
-    
-    /* Let the date picker container grow and center its content */
-    .date-picker-container {
-      flex: 1 1 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-    }
-    
-    .date,
-    .number {
-      font-size: 1.2rem;
-      color: #4a5568;
-    }
-    
-    /* Updated styling for the date picker input with transparent background */
-    .date-picker-input {
-      max-width: 150px;
-      width: 50%;
-      border: 2px solid #4299e1;
-      border-radius: 8px;
-      background: transparent;
-      color: #4299e1;
+      padding: 0;
       text-align: center;
-      cursor: pointer;
-      transition: transform 0.2s ease, background 0.3s ease;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-    }
-    
-    .date-picker-input:hover {
-      background: rgba(66, 153, 225, 0.1);
-      transform: scale(1.05);
-    }
-    
-    .date-picker-input:disabled {
-      background: #a0aec0;
-      cursor: not-allowed;
-      transform: none;
-    }
-    
-    .quote-card {
-      background: #fff;
-      border-radius: 15px;
-      padding: 2rem;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      transition: opacity 0.3s ease;
-    }
-    
-    .quote-content {
+      color: #333;
       line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
-    
-    .chinese-text {
-      font-family: 'KaiTi', '楷体', 'STKaiti', serif;
-      font-size: 1.6rem;
-      margin-bottom: 1.5rem;
-      color: #333;
+    body.dark-mode {
+      background-color: #1c1c1e;
+      color: #f2f2f7;
     }
-    
-    .english-text {
-      font-size: 1.3rem;
-      color: #4a5568;
-      margin: 1.5rem 0;
-      font-style: italic;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
     }
-    
-    .author {
-      text-align: right;
-      color: #718096;
-      font-style: italic;
+    /* Dark mode adjustments for sections */
+    #uploadSection, #exerciseSection {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
-    
-    hr {
-      border: 0;
-      height: 1px;
-      background: #e2e8f0;
-      margin: 1.5rem 0;
+    body.dark-mode #uploadSection,
+    body.dark-mode #exerciseSection {
+      background-color: #2c2c2e;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
-    
-    .navigation {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 2rem;
+    h1 {
+      margin-bottom: 30px;
+      color: #000;
+      transition: color 0.3s ease;
     }
-    
-    .nav-btn {
-      padding: 0.6rem 1rem;
-      border: none;
-      border-radius: 980px;
-      background: rgb(0, 113, 227);
+    body.dark-mode h1 {
       color: #fff;
-      cursor: pointer;
-      transition: transform 0.2s ease, background 0.3s ease;
-      outline: none;
-      width: 7rem;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      text-align: center;
+    }
+    /* Dark mode toggle switch (Apple-style) */
+    .theme-toggle {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .toggle-label {
+      margin-left: 8px;
       font-size: 14px;
-      height: 40px;
-
     }
-    
-    .nav-btn:hover {
-      background: #0076DF;
-      transform: scale(1.05);
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 28px;
     }
-    
-    .nav-btn:disabled {
-      background: #a0aec0;
-      cursor: not-allowed;
-      transform: none;
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
     }
-
     #visitor-counter {
-      font-size: 1em;
-      margin: 5px 0;
-      text-align: center;
-      color: #333;
-      margin-top: 2rem; 
+      margin-right: auto;
+      text-align: left;
     }
-
-    #visitor-counter #pageviews {
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: background-color 0.3s;
+      border-radius: 34px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 22px;
+      width: 22px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: transform 0.3s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #34C759;
+    }
+    input:checked + .slider:before {
+      transform: translateX(22px);
+    }
+    /* Upload Section */
+    #uploadSection {
+      margin-top: 30px;
+      padding: 20px;
+    }
+    .upload-option {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      border: 1px solid #e9ecef;
+      transition: background-color 0.3s ease, border 0.3s ease;
+    }
+    body.dark-mode .upload-option {
+      background-color: #3a3a3c;
+      border: 1px solid #555;
+    }
+    .upload-option h3 {
+      margin-top: 0;
+      color: #000;
+      transition: color 0.3s ease;
+    }
+    body.dark-mode .upload-option h3 {
+      color: #f2f2f7;
+    }
+    #file-upload-label {
+      display: inline-block;
+      padding: 12px 20px;
+      background: linear-gradient(to bottom, #fefefe, #e0e0e0);
+      color: #000;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    #file-upload-label:hover {
+      background: linear-gradient(to bottom, #eaeaea, #d4d4d4);
+    }
+    #csvFileInput {
+      display: none;
+    }
+    #sheetsUrlInput {
+      width: 70%;
+      padding: 12px;
+      margin: 10px auto;
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+    #sheetsUrlInput:focus {
+      outline: none;
+      border-color: #0a84ff;
+      box-shadow: 0 0 0 3px rgba(10,132,255,0.3);
+    }
+    #loadSheetButton {
+      padding: 12px 20px;
+      background: linear-gradient(to bottom, #fefefe, #e0e0e0);
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+    #loadSheetButton:hover {
+      background: linear-gradient(to bottom, #eaeaea, #d4d4d4);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    /* Exercise Section */
+    #exerciseSection {
+      display: none;
+      margin: 20px 0;
+      padding: 30px;
+    }
+    #progressDisplay {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+    body.dark-mode #progressDisplay {
+      color: #ccc;
+    }
+    #titleDisplay {
+      font-size: 24px;
+      margin-bottom: 20px;
       font-weight: bold;
       color: #000;
+      transition: color 0.3s ease;
     }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    body.dark-mode #titleDisplay {
+      color: #fff;
     }
-    
-    /* Mobile adjustments for screens up to 900px */
-    @media (max-width: 900px) {
-      .chinese-text {
-        font-size: 1.4rem;
-      }
-      .english-text {
-        font-size: 1.2rem;
-      }
-      .date,
-      .number {
-        font-size: 1rem;
-      }
-      .nav-btn {
-        width: 6rem;
-      }
-      .date-picker-input {
-        max-width: 120px;
-      }
+    #scrollWrapper {
+      position: relative;
+      width: 100%;
+      height: 140px;
+      margin: 30px 0 10px 0;
+      background-color: #f8f9fa;
+      border-radius: 8px 8px 0 0;
+      padding: 10px 0;
+      overflow: hidden;
+      transition: background-color 0.3s ease;
     }
-    
-    /* Additional Mobile adjustments for screens up to 600px */
-    @media (max-width: 600px) {
-      /* Hide the current date as the date-picker shows the same value */
-      #current-date {
-        display: none;
+    body.dark-mode #scrollWrapper {
+      background-color: #3a3a3c;
+    }
+    #scrollContainer {
+      position: absolute;
+      left: 0;
+      top: 0;
+      white-space: nowrap;
+      transition: transform 0.3s ease-out;
+      padding: 10px;
+    }
+    #scrollbarContainer {
+      position: relative;
+      width: 100%;
+      height: 20px;
+      background-color: #e9ecef;
+      border-radius: 0 0 8px 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+    body.dark-mode #scrollbarContainer {
+      background-color: #555;
+    }
+    #scrollbar {
+      position: absolute;
+      height: 100%;
+      background-color: #adb5bd;
+      border-radius: 0 0 8px 8px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    #scrollbar:hover {
+      background-color: #6c757d;
+    }
+    #scrollbar:active {
+      background-color: #495057;
+    }
+    .pinyin-box, .char-box {
+      display: inline-block;
+      width: 60px;
+      margin: 0 8px;
+      font-size: 26px;
+      transition: all 0.3s;
+    }
+    .char-box {
+      border-bottom: 2px solid #ddd;
+      height: 50px;
+      line-height: 50px;
+    }
+    .current-char {
+      border-bottom-color: #0a84ff;
+      background-color: rgba(10,132,255,0.1);
+      border-radius: 4px;
+      transform: scale(1.1);
+    }
+    .correct-pinyin {
+      color: #0a84ff;
+      font-weight: bold;
+    }
+    .completed-char {
+      color: #6c757d;
+    }
+    #hiddenInput {
+      width: 80%;
+      max-width: 300px;
+      font-size: 24px;
+      margin: 20px auto;
+      padding: 12px;
+      border: 2px solid #0a84ff;
+      border-radius: 8px;
+      outline: none;
+      background-color: #f8f9fa;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    body.dark-mode #hiddenInput {
+      background-color: #3a3a3c;
+      border-color: #0a84ff;
+      color: #f2f2f7;
+    }
+    #feedbackMessage {
+      font-size: 20px;
+      height: 30px;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+    .btn {
+      margin: 20px 10px;
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+      font-weight: bold;
+      background: linear-gradient(to bottom, #fefefe, #e0e0e0);
+      color: #000;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .btn:active {
+      transform: translateY(1px);
+    }
+    .btn-primary {
+      background: linear-gradient(to bottom, #fefefe, #e0e0e0);
+      color: #000;
+    }
+    .btn-warning {
+      background: linear-gradient(to bottom, #fff5e5, #ffe0b3);
+      color: #333;
+    }
+    .btn-secondary {
+      background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
+      color: #333;
+    }
+    .btn-reset {
+      background: linear-gradient(to bottom, #e5f7fa, #cceeea);
+      color: #000;
+    }
+    .instruction {
+      margin: 20px 0;
+      font-size: 16px;
+      color: #6c757d;
+      transition: color 0.3s ease;
+    }
+    body.dark-mode .instruction {
+      color: #bbb;
+    }
+    .file-name {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #6c757d;
+      transition: color 0.3s ease;
+    }
+    body.dark-mode .file-name {
+      color: #ccc;
+    }
+    .error {
+      animation: shake 0.5s;
+    }
+    .loading {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(10,132,255,0.3);
+      border-radius: 50%;
+      border-top-color: #0a84ff;
+      animation: spin 1s ease-in-out infinite;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    .keyboard-shortcut {
+      display: inline-block;
+      padding: 2px 8px;
+      background-color: #e9ecef;
+      border-radius: 4px;
+      font-size: 14px;
+      margin: 0 4px;
+      color: #495057;
+      border: 1px solid #ced4da;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      75% { transform: translateX(5px); }
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    @media (max-width: 768px) {
+      .pinyin-box, .char-box {
+        width: 50px;
+        font-size: 22px;
       }
-
-      /* Align the date picker to the left instead of center */
-      .date-picker-container {
-        justify-content: flex-start;
+      .char-box {
+        height: 40px;
+        line-height: 40px;
       }
-      /* Adjust the quote card to be a bit wider */
-      .quote-card {
-        max-width: 95%;
-        padding: 1.5rem;
+      .btn {
+        padding: 10px 18px;
+        font-size: 16px;
+        margin: 10px 5px;
+      }
+      #sheetsUrlInput {
+        width: 90%;
       }
     }
   </style>
-  <!-- Include SheetJS library from CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-  <!-- Include js-yaml library from CDN for YAML parsing -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <div id="current-date" class="date"></div>
-      <!-- Native Date Picker for selecting a specific date -->
-      <div class="date-picker-container">
-        <input type="date" id="date-picker" class="date-picker-input">
-      </div>
-      <div id="quote-number" class="number"></div>
-    </div>
-
-    <div class="quote-card" id="quote-card">
-      <div class="quote-content">
-        <p id="chinese-quote" class="chinese-text"></p>
-        <p id="chinese-author" class="author"></p>
-        <hr />
-        <p id="english-quote" class="english-text"></p>
-        <p id="english-author" class="author"></p>
-      </div>
-    </div>
-
-    <div class="navigation">
-      <button id="prev-btn" class="nav-btn">Previous</button>
-      <!-- Dropdown inserted between the navigation buttons -->
-      <select id="csv-select" class="nav-btn"></select>
-      <button id="next-btn" class="nav-btn">Next</button>
-    </div>
-    <div id="visitor-counter">
+    <!-- Dark mode toggle -->
+    <div class="theme-toggle">
+      <div id="visitor-counter">
       Welcome! You’re visitor #<span id="pageviews">Loading...</span>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+      <span class="toggle-label">Dark Mode</span>
+    </div>
+    <h1>Chinese Typing Exercise</h1>
+    
+    <div id="uploadSection">
+      <h2>Import Exercise Data</h2>
+      
+      <div class="upload-option">
+        <h3>Option 1: Upload CSV File</h3>
+        <p class="instruction">Upload a CSV file with two columns: Title and Chinese text.</p>
+        <label id="file-upload-label" for="csvFileInput">Choose CSV File</label>
+        <input type="file" id="csvFileInput" accept=".csv">
+        <div id="fileName" class="file-name"></div>
+      </div>
+      
+      <div class="upload-option">
+        <h3>Option 2: Import from Google Sheets</h3>
+        <p class="instruction">Paste your Google Sheets URL below. Make sure the sheet is public or shared with anyone with the link.</p>
+        <input type="text" id="sheetsUrlInput" placeholder="https://docs.google.com/spreadsheets/d/.../edit?gid=0#gid=0">
+        <div id="loadingIndicator" style="display: none;"><span class="loading"></span> Loading...</div>
+        <p class="instruction">Sheet should have columns for Title and Chinese text.</p>
+        <button id="loadSheetButton" class="btn btn-primary">Import from Google Sheets</button>
+      </div>
+    </div>
+
+    <div id="exerciseSection">
+      <div id="progressDisplay"></div>
+      <div id="titleDisplay"></div>
+      <div id="scrollWrapper">
+        <div id="scrollContainer">
+          <div id="pinyinRow"></div>
+          <div id="charRow" style="margin-top: 20px;"></div>
+        </div>
+      </div>
+      <div id="scrollbarContainer">
+        <div id="scrollbar"></div>
+      </div>
+      <input type="text" id="hiddenInput" placeholder="Type here..." autofocus>
+      <div id="feedbackMessage"></div>
+      <p class="instruction">Type the Chinese characters or press <span class="keyboard-shortcut">Space</span> to skip a character. Use the scrollbar to navigate.</p>
+    </div>
+
+    <div id="buttonContainer">
+      <button id="restartButton" class="btn btn-reset" style="display:none;">Restart Exercise</button>
+      <button id="nextButton" class="btn btn-primary" style="display:none;">Next Exercise</button>
+      <button id="returnButton" class="btn btn-secondary" style="display:none;">Return to Upload</button>
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.13.2/dist/index.js"></script>
   <script>
-    // Helper function to get a date string in YYYY-MM-DD format using local date methods.
-    function getLocalDateString(date) {
-      const year = date.getFullYear();
-      const month = (date.getMonth() + 1).toString().padStart(2, '0');
-      const day = date.getDate().toString().padStart(2, '0');
-      return `${year}-${month}-${day}`;
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      let currentDate;
-      let quotes = [];
-      let selectedDay = 1;
-      let initialized = false;
-      // Default value; will be overwritten by YAML configuration.
-      let currentFile = 'quotes.csv';
-      let next_btn_lock = false; // When true, "Next" button is locked to today's quote
-
-      // Timezone handling
-      try {
-        currentDate = new Date();
-      } catch {
-        // Fallback to Singapore time (UTC+8)
-        currentDate = new Date(Date.now() + (480 * 60000));
-      }
-  
-      // Date formatting arrays
-      const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-      const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  
-      // Function to load quotes data from the specified CSV file or Google Sheets URL
-      function loadQuotes(fileName) {
-        fetch(fileName)
-          .then(response => {
-            if (fileName.includes('docs.google.com/spreadsheets') || fileName.endsWith('.csv')) {
-              return response.text();
-            } else {
-              return response.arrayBuffer();
-            }
-          })
-          .then(data => {
-            let workbook;
-            if (typeof data === 'string') {
-              workbook = XLSX.read(data, { type: 'string' });
-            } else {
-              workbook = XLSX.read(data, { type: 'array' });
-            }
-            const firstSheetName = workbook.SheetNames[0];
-            const worksheet = workbook.Sheets[firstSheetName];
-            // Convert the first sheet to JSON. Ensure that missing cells get a default value.
-            quotes = XLSX.utils.sheet_to_json(worksheet, { defval: '' });
-            if (!initialized) {
-              initialize();
-              initialized = true;
-            } else {
-              updateDisplay();
-            }
-          })
-          .catch(error => console.error('Error loading quotes:', error));
-      }
-  
-      // Populate the dropdown using a YAML configuration file
-      function populateDropdownFromYAML() {
-        fetch('csv_files.yaml')
-          .then(response => {
-            if (response.ok) return response.text();
-            else throw new Error('Unable to fetch YAML configuration.');
-          })
-          .then(text => {
-            const config = jsyaml.load(text);
-            if (config && config.csvFiles && Array.isArray(config.csvFiles)) {
-              updateDropdown(config.csvFiles);
-              // Set currentFile to the URL of the first entry
-              currentFile = config.csvFiles[0].url;
-              // Now load quotes from that file
-              loadQuotes(currentFile);
-            }
-          })
-          .catch(err => {
-            console.error('Error fetching CSV configuration:', err);
-          });
-      }
-  
-      // Update dropdown options with the provided file list
-      function updateDropdown(fileList) {
-        const dropdown = document.getElementById('csv-select');
-        dropdown.innerHTML = '';
-        fileList.forEach(file => {
-          const option = document.createElement('option');
-          option.value = file.url;      // Use the URL for fetching
-          option.textContent = file.title; // Display a friendly title
-          dropdown.appendChild(option);
-        });
-        // Set default to first option
-        dropdown.value = fileList[0].url;
-        currentFile = dropdown.value;
-      }
-  
-      // Dropdown change event to load the selected CSV file/Google Sheets URL
-      document.getElementById('csv-select').addEventListener('change', function() {
-        currentFile = this.value;
-        loadQuotes(currentFile);
-      });
-  
-      function initialize() {
-        const year = currentDate.getFullYear();
-        const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
-        
-        // Calculate day of year based on current date
-        const start = new Date(year, 0, 0);
-        const diff = currentDate - start;
-        const oneDay = 1000 * 60 * 60 * 24;
-        selectedDay = Math.floor(diff / oneDay);
-        
-        // Handle non-leap years if day exceeds maximum
-        if (!isLeapYear && selectedDay >= 366) selectedDay = 1;
-        if (!isLeapYear && selectedDay > 365) selectedDay = 365;
-  
-        updateDisplay();
-        setupNavigation();
-  
-        // Initialize the date picker
-        const datePicker = document.getElementById('date-picker');
-        datePicker.min = `${year}-01-01`;
-        if (next_btn_lock) {
-          datePicker.max = getLocalDateString(currentDate);
-        }
-        const displayDate = new Date(year, 0, selectedDay);
-        datePicker.value = getLocalDateString(displayDate);
-  
-        // When the user selects a date, convert it to the day-of-year and update display.
-        datePicker.addEventListener('change', function(){
-          let chosenDate = new Date(this.value);
-          // If next_btn_lock is true, restrict future dates.
-          if (next_btn_lock && chosenDate > currentDate) {
-            chosenDate = currentDate;
-            this.value = getLocalDateString(currentDate);
-          }
-          const startOfYear = new Date(chosenDate.getFullYear(), 0, 0);
-          const diff = chosenDate - startOfYear;
-          const oneDay = 1000 * 60 * 60 * 24;
-          selectedDay = Math.floor(diff / oneDay);
-          updateDisplay();
-        });
-      }
-  
-      // Update the inner content of the page
-      function updateContent() {
-        // Compute display date based on selectedDay
-        const displayDate = new Date(currentDate.getFullYear(), 0, selectedDay);
-        const dateString = `${displayDate.getDate().toString().padStart(2, '0')} ${monthNames[displayDate.getMonth()]} ${displayDate.getFullYear()}, ${dayNames[displayDate.getDay()]}`;
-        document.getElementById('current-date').textContent = dateString;
-        document.getElementById('quote-number').textContent = `#${selectedDay}`;
-  
-        // Cycle through quotes: use modulo arithmetic with cycle length.
-        // If the CSV has fewer than 365 rows, it will loop; if more, only the first 365 rows are used.
-        const cycleLength = quotes.length >= 365 ? 365 : quotes.length;
-        if (cycleLength > 0) {
-          const index = (selectedDay - 1) % cycleLength;
-          let quote = quotes[index];
-          if (quote) {
-            document.getElementById('chinese-quote').textContent = quote['Chinese'];
-            document.getElementById('english-quote').textContent = quote['English'];
-            document.getElementById('chinese-author').textContent = `— ${quote['Author_CL']}`;
-            document.getElementById('english-author').textContent = `— ${quote['Author_EL']}`;
-          }
-        }
-  
-        // Keep the date picker in sync with the selected date.
-        document.getElementById('date-picker').value = getLocalDateString(displayDate);
-  
-        // Update navigation button states
-        document.getElementById('prev-btn').disabled = selectedDay <= 1;
-        document.getElementById('next-btn').disabled = next_btn_lock ? (selectedDay >= getMaxDay()) : false;
-      }
-  
-      // Update display with a smooth fade transition
-      function updateDisplay() {
-        const quoteCard = document.getElementById('quote-card');
-        // Fade out before updating content
-        quoteCard.style.opacity = 0;
-        setTimeout(() => {
-          updateContent();
-          // Fade in updated content
-          quoteCard.style.opacity = 1;
-        }, 300);
-      }
-  
-      function setupNavigation() {
-        document.getElementById('prev-btn').addEventListener('click', () => {
-          if (selectedDay > 1) {
-            selectedDay--;
-            updateDisplay();
-          }
-        });
-  
-        document.getElementById('next-btn').addEventListener('click', () => {
-          if (next_btn_lock) {
-            if (selectedDay < getMaxDay()) {
-              selectedDay++;
-              updateDisplay();
-            }
-          } else {
-            selectedDay++;
-            updateDisplay();
-          }
-        });
-      }
-  
-      // Modified getMaxDay: return current day-of-year instead of total days in the year
-      function getMaxDay() {
-        const startOfYear = new Date(currentDate.getFullYear(), 0, 0);
-        const diff = currentDate - startOfYear;
-        const oneDay = 1000 * 60 * 60 * 24;
-        return Math.floor(diff / oneDay);
-      }
-  
-      // Start by populating dropdown from YAML configuration
-      populateDropdownFromYAML();
+    // Dark Mode Toggle
+    document.getElementById('themeToggle').addEventListener('change', function() {
+      document.body.classList.toggle('dark-mode', this.checked);
     });
 
+    let exercises = [];
+    let currentExerciseIndex = 0;
+    let currentCharIndex = 0;
+    let isComposing = false;
+    let lastFocusTime = Date.now();
+    let isDragging = false;
+    let startX = 0;
+    let scrollStartPosition = 0;
+    let totalWidth = 0;
+    let containerWidth = 0;
+
+    const elements = {
+      csvFileInput: document.getElementById('csvFileInput'),
+      sheetsUrlInput: document.getElementById('sheetsUrlInput'),
+      loadSheetButton: document.getElementById('loadSheetButton'),
+      loadingIndicator: document.getElementById('loadingIndicator'),
+      uploadSection: document.getElementById('uploadSection'),
+      exerciseSection: document.getElementById('exerciseSection'),
+      progressDisplay: document.getElementById('progressDisplay'),
+      titleDisplay: document.getElementById('titleDisplay'),
+      pinyinRow: document.getElementById('pinyinRow'),
+      charRow: document.getElementById('charRow'),
+      scrollContainer: document.getElementById('scrollContainer'),
+      scrollWrapper: document.getElementById('scrollWrapper'),
+      scrollbarContainer: document.getElementById('scrollbarContainer'),
+      scrollbar: document.getElementById('scrollbar'),
+      hiddenInput: document.getElementById('hiddenInput'),
+      feedbackMessage: document.getElementById('feedbackMessage'),
+      restartButton: document.getElementById('restartButton'),
+      nextButton: document.getElementById('nextButton'),
+      returnButton: document.getElementById('returnButton'),
+      fileName: document.getElementById('fileName')
+    };
+
+    function parseCSV(text) {
+      try {
+        // Remove BOM and handle different line endings (CRLF, LF)
+        const cleanedText = text.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n');
+        const lines = cleanedText.split('\n')
+          .map(line => line.trim())
+          .filter(line => line !== '');
+        
+        // Parse CSV lines - handling quoted fields correctly
+        const parsedExercises = [];
+        for (const line of lines) {
+          let fields = [];
+          let currentField = "";
+          let inQuotes = false;
+          
+          for (let i = 0; i < line.length; i++) {
+            const char = line[i];
+            
+            if (char === '"' && (i === 0 || line[i-1] !== '\\')) {
+              inQuotes = !inQuotes;
+            } else if (char === ',' && !inQuotes) {
+              fields.push(currentField.replace(/^"(.*)"$/, '$1').trim());
+              currentField = "";
+            } else {
+              currentField += char;
+            }
+          }
+          
+          // Add the last field
+          fields.push(currentField.replace(/^"(.*)"$/, '$1').trim());
+          
+          if (fields.length >= 2 && fields[1].length > 0) {
+            parsedExercises.push({ 
+              title: fields[0] || 'Exercise', 
+              text: fields[1] 
+            });
+          }
+        }
+        
+        exercises = parsedExercises;
+        
+        if (exercises.length) {
+          startExercise();
+          return true;
+        } else {
+          showError('No valid exercises found in CSV. Ensure second column contains Chinese text.');
+          return false;
+        }
+      } catch (error) {
+        showError('Error parsing CSV file: ' + error.message);
+        console.error(error);
+        return false;
+      }
+    }
+    
+    function extractGoogleSheetId(url) {
+      // Extract the sheet ID from different Google Sheets URL formats
+      const regex = /\/spreadsheets\/d\/([a-zA-Z0-9-_]+)/;
+      const match = url.match(regex);
+      return match ? match[1] : null;
+    }
+    
+    function importFromGoogleSheets(url) {
+      const sheetId = extractGoogleSheetId(url);
+      
+      if (!sheetId) {
+        showError('Invalid Google Sheets URL. Please check and try again.');
+        elements.loadingIndicator.style.display = 'none';
+        return;
+      }
+      
+      // Construct the CSV export URL
+      const csvExportUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=csv`;
+      
+      // Fetch the CSV data
+      fetch(csvExportUrl)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Could not access the sheet. Make sure it\'s shared publicly or with anyone with the link.');
+          }
+          return response.text();
+        })
+        .then(data => {
+          elements.loadingIndicator.style.display = 'none';
+          parseCSV(data);
+        })
+        .catch(error => {
+          elements.loadingIndicator.style.display = 'none';
+          showError(`Error importing from Google Sheets: ${error.message}`);
+        });
+    }
+
+    function showError(message) {
+      alert(message);
+    }
+
+    function startExercise() {
+      elements.uploadSection.style.display = 'none';
+      elements.exerciseSection.style.display = 'block';
+      elements.restartButton.style.display = 'inline-block';
+      elements.returnButton.style.display = 'inline-block';
+      elements.nextButton.style.display = 'none';
+      currentCharIndex = 0;
+      loadExercise(exercises[currentExerciseIndex]);
+      setTimeout(() => elements.hiddenInput.focus(), 100);
+    }
+
+    function restartCurrentExercise() {
+      currentCharIndex = 0;
+      loadExercise(exercises[currentExerciseIndex]);
+      elements.nextButton.style.display = 'none';
+      elements.feedbackMessage.textContent = '';
+      setTimeout(() => elements.hiddenInput.focus(), 100);
+    }
+
+    function loadExercise(exercise) {
+      elements.titleDisplay.textContent = exercise.title;
+      elements.progressDisplay.textContent = `Exercise ${currentExerciseIndex + 1} of ${exercises.length}`;
+      
+      try {
+        // Use pinyin library with specific options
+        const pinyinArr = pinyinPro.pinyin(exercise.text, { 
+          toneType: 'marks',
+          type: 'array',
+          nonZh: 'retain'
+        });
+
+        // Clear previous exercise
+        elements.pinyinRow.innerHTML = '';
+        elements.charRow.innerHTML = '';
+
+        // Create DOM elements for each character and its pinyin
+        const fragment1 = document.createDocumentFragment();
+        const fragment2 = document.createDocumentFragment();
+
+        exercise.text.split('').forEach((char, i) => {
+          const pinyinSpan = document.createElement('span');
+          pinyinSpan.className = 'pinyin-box';
+          pinyinSpan.textContent = pinyinArr[i] || '';
+          fragment1.appendChild(pinyinSpan);
+
+          const charSpan = document.createElement('span');
+          charSpan.className = 'char-box';
+          charSpan.dataset.expected = char;
+          fragment2.appendChild(charSpan);
+        });
+
+        elements.pinyinRow.appendChild(fragment1);
+        elements.charRow.appendChild(fragment2);
+
+        // Calculate total content width for scrollbar
+        setTimeout(() => {
+          updateScrollbarDimensions();
+          updateInterface();
+        }, 0);
+      } catch (error) {
+        showError('Error loading exercise: ' + error.message);
+        console.error(error);
+      }
+    }
+
+    function updateScrollbarDimensions() {
+      // Calculate dimensions for scrollbar
+      containerWidth = elements.scrollWrapper.offsetWidth;
+      totalWidth = elements.scrollContainer.scrollWidth;
+      
+      // Set scrollbar width proportional to visible area
+      const scrollbarRatio = Math.min(containerWidth / totalWidth, 1);
+      const scrollbarWidth = Math.max(containerWidth * scrollbarRatio, 40); // Minimum width of 40px
+      
+      elements.scrollbar.style.width = scrollbarWidth + 'px';
+    }
+
+    function updateScrollbarPosition(offsetX) {
+      // Calculate how much of the content is scrolled
+      const maxOffset = totalWidth - containerWidth;
+      const scrollRatio = maxOffset <= 0 ? 0 : offsetX / maxOffset;
+      
+      // Calculate scrollbar position
+      const maxScrollbarOffset = elements.scrollbarContainer.offsetWidth - elements.scrollbar.offsetWidth;
+      const scrollbarPosition = scrollRatio * maxScrollbarOffset;
+      
+      // Update scrollbar position
+      elements.scrollbar.style.left = scrollbarPosition + 'px';
+    }
+
+    function updateInterface(manualOffset = null) {
+      // Reset all character boxes
+      document.querySelectorAll('.char-box').forEach((box, index) => {
+        box.classList.remove('current-char');
+        if (index < currentCharIndex) {
+          box.classList.add('completed-char');
+        } else {
+          box.classList.remove('completed-char');
+        }
+      });
+      
+      // Highlight current character
+      const charBoxes = document.querySelectorAll('.char-box');
+      if (charBoxes.length > 0 && currentCharIndex < charBoxes.length) {
+        charBoxes[currentCharIndex].classList.add('current-char');
+      }
+
+      // Calculate scroll position
+      const boxWidth = charBoxes.length > 0 ? charBoxes[0].offsetWidth + 16 : 76; // width + margins
+      
+      let offsetX;
+      if (manualOffset !== null) {
+        // Use manual offset from scrollbar drag
+        offsetX = manualOffset;
+      } else {
+        // Center current character
+        const containerWidth = elements.scrollWrapper.offsetWidth;
+        const offset = containerWidth / 2 - boxWidth / 2;
+        offsetX = currentCharIndex * boxWidth - offset;
+        
+        // Constrain to valid range
+        const maxOffset = totalWidth - containerWidth;
+        offsetX = Math.max(0, Math.min(offsetX, maxOffset));
+      }
+      
+      // Apply transform to scroll container
+      requestAnimationFrame(() => {
+        elements.scrollContainer.style.transform = `translateX(-${offsetX}px)`;
+        updateScrollbarPosition(offsetX);
+      });
+    }
+
+    function handleScrollbarDrag(clientX) {
+      const scrollbarContainerRect = elements.scrollbarContainer.getBoundingClientRect();
+      const scrollbarRect = elements.scrollbar.getBoundingClientRect();
+      
+      // Calculate position within container accounting for scrollbar width
+      const scrollbarWidth = scrollbarRect.width;
+      const containerWidth = scrollbarContainerRect.width;
+      
+      // Calculate the new scrollbar position
+      let newLeft = clientX - scrollbarContainerRect.left - (scrollbarWidth / 2);
+      
+      // Constrain to valid range
+      newLeft = Math.max(0, Math.min(newLeft, containerWidth - scrollbarWidth));
+      
+      // Calculate content offset based on scrollbar position
+      const scrollRatio = newLeft / (containerWidth - scrollbarWidth);
+      const maxOffset = totalWidth - elements.scrollWrapper.offsetWidth;
+      const contentOffset = maxOffset * scrollRatio;
+      
+      // Update interface with manual offset
+      updateInterface(contentOffset);
+      
+      return newLeft;
+    }
+
+    function handleSkip() {
+      const charBoxes = document.querySelectorAll('.char-box');
+      if (currentCharIndex >= charBoxes.length) return;
+
+      // Show correct character and mark as skipped
+      charBoxes[currentCharIndex].textContent = charBoxes[currentCharIndex].dataset.expected;
+      charBoxes[currentCharIndex].style.color = '#ffc107'; // Yellow for skipped
+      
+      currentCharIndex++;
+      
+      if (currentCharIndex === charBoxes.length) {
+        completeExercise();
+      } else {
+        updateInterface();
+        elements.hiddenInput.focus();
+      }
+    }
+
+    function completeExercise() {
+      elements.feedbackMessage.textContent = 'Exercise Completed!';
+      elements.feedbackMessage.style.color = '#0a84ff';
+      elements.nextButton.style.display = 'inline-block';
+      elements.hiddenInput.blur();
+    }
+
+    function checkInput(inputStr) {
+      if (!inputStr) return;
+      
+      const charBoxes = document.querySelectorAll('.char-box');
+      const pinyinBoxes = document.querySelectorAll('.pinyin-box');
+      
+      for (let i = 0; i < inputStr.length; i++) {
+        if (currentCharIndex >= charBoxes.length) break;
+        
+        const inputChar = inputStr[i];
+        const expected = charBoxes[currentCharIndex].dataset.expected;
+        
+        if (inputChar === expected) {
+          // Correct input
+          charBoxes[currentCharIndex].textContent = expected;
+          charBoxes[currentCharIndex].style.color = '#0a84ff';
+          pinyinBoxes[currentCharIndex].classList.add('correct-pinyin');
+          
+          currentCharIndex++;
+          
+          if (currentCharIndex === charBoxes.length) {
+            completeExercise();
+            break;
+          } else {
+            showFeedback('✓ Correct', '#0a84ff');
+          }
+        } else {
+          // Incorrect input
+          showFeedback('✗ Try Again', '#dc3545');
+          elements.hiddenInput.classList.add('error');
+          setTimeout(() => elements.hiddenInput.classList.remove('error'), 500);
+        }
+      }
+      
+      updateInterface();
+    }
+
+    function showFeedback(message, color) {
+      elements.feedbackMessage.textContent = message;
+      elements.feedbackMessage.style.color = color;
+      
+      // Clear feedback after delay
+      clearTimeout(window.feedbackTimer);
+      window.feedbackTimer = setTimeout(() => {
+        elements.feedbackMessage.textContent = '';
+      }, 1500);
+    }
+
+    // Scrollbar Event Handlers
+    elements.scrollbar.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.clientX;
+      scrollStartPosition = elements.scrollbar.offsetLeft;
+      document.body.style.userSelect = 'none'; // Prevent text selection during drag
+      
+      // Prevent focus from moving away from input
+      e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      
+      handleScrollbarDrag(e.clientX);
+    });
+
+    document.addEventListener('mouseup', () => {
+      if (isDragging) {
+        isDragging = false;
+        document.body.style.userSelect = '';
+        elements.hiddenInput.focus();
+      }
+    });
+
+    // Touch events for mobile support
+    elements.scrollbar.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      startX = e.touches[0].clientX;
+      scrollStartPosition = elements.scrollbar.offsetLeft;
+      e.preventDefault();
+    });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      handleScrollbarDrag(e.touches[0].clientX);
+    });
+
+    document.addEventListener('touchend', () => {
+      isDragging = false;
+      elements.hiddenInput.focus();
+    });
+
+    // Clicking on scrollbar container to jump
+    elements.scrollbarContainer.addEventListener('click', (e) => {
+      // Ignore if clicking on scrollbar itself
+      if (e.target === elements.scrollbar) return;
+      
+      handleScrollbarDrag(e.clientX);
+    });
+
+    // Input Event Listeners
+    elements.hiddenInput.addEventListener('compositionstart', () => isComposing = true);
+    elements.hiddenInput.addEventListener('compositionend', (e) => {
+      isComposing = false;
+      // Process the final composed text
+      checkInput(e.target.value);
+      e.target.value = '';
+    });
+
+    elements.hiddenInput.addEventListener('input', function(e) {
+      if (isComposing) return;
+      
+      checkInput(e.target.value);
+      e.target.value = '';
+    });
+
+    // Space key for skipping
+    elements.hiddenInput.addEventListener('keydown', function(e) {
+      if (e.code === 'Space' || e.keyCode === 32) {
+        e.preventDefault(); // Prevent space from being added to input
+        handleSkip();
+      }
+    });
+    
+    elements.restartButton.addEventListener('click', restartCurrentExercise);
+    
+    elements.nextButton.addEventListener('click', () => {
+      if (currentExerciseIndex < exercises.length - 1) {
+        currentExerciseIndex++;
+        startExercise();
+      } else {
+        showFeedback('All exercises completed! 🎉', '#0a84ff');
+        elements.nextButton.style.display = 'none';
+        elements.returnButton.style.display = 'inline-block';
+      }
+    });
+
+    elements.returnButton.addEventListener('click', () => {
+      elements.uploadSection.style.display = 'block';
+      elements.exerciseSection.style.display = 'none';
+      elements.nextButton.style.display = 'none';
+      elements.returnButton.style.display = 'none';
+      elements.restartButton.style.display = 'none';
+      exercises = [];
+      currentExerciseIndex = 0;
+      elements.csvFileInput.value = ""; // Reset file input to allow same CSV re-upload
+      elements.fileName.textContent = ""; // Clear displayed file name
+    });
+
+    elements.csvFileInput.addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      
+      // Display file name
+      elements.fileName.textContent = file.name;
+      
+      const reader = new FileReader();
+      reader.onload = e => parseCSV(e.target.result);
+      reader.onerror = () => showError('Error reading file');
+      reader.readAsText(file);
+    });
+    
+    elements.loadSheetButton.addEventListener('click', function() {
+      const url = elements.sheetsUrlInput.value.trim();
+      
+      if (!url) {
+        showError('Please enter a Google Sheets URL');
+        return;
+      }
+      
+      elements.loadingIndicator.style.display = 'inline-block';
+      importFromGoogleSheets(url);
+    });
+
+    // Keep focus on input box
+    document.addEventListener('click', (e) => {
+      // Only refocus if we're in exercise mode and not too frequent
+      // And not clicking on scrollbar
+      if (elements.exerciseSection.style.display === 'block' && 
+          Date.now() - lastFocusTime > 200 &&
+          e.target !== elements.scrollbar &&
+          e.target !== elements.scrollbarContainer) {
+        elements.hiddenInput.focus();
+        lastFocusTime = Date.now();
+      }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      updateScrollbarDimensions();
+      updateInterface();
+      
+      // On mobile, when keyboard appears, scroll to input
+      if (window.innerWidth <= 768) {
+        elements.hiddenInput.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    // Pageviews
     document.addEventListener('DOMContentLoaded', () => {
       const pv = document.getElementById('pageviews');
 
@@ -525,6 +999,9 @@
           });
       }
     });
+
+
+
   </script>
 </body>
 </html>
