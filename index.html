@@ -526,5 +526,14 @@
       }
     });
   </script>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://n8n.linsnode.com/webhook/e104e40e-6134-4825-a6f0-8a646d882662/chat'
+	});
+</script>
+  
 </body>
 </html>
