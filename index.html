@@ -532,7 +532,7 @@
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
   async function getToken() {
-    const res = await fetch('https://n8n.kuibin.workers.dev/api/token', {
+    const res = await fetch('https://n8n-chat.kuibin.workers.dev/api/token', {
       method: 'GET',
       // no credentials; CORS is handled by the Worker
     });
