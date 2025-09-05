@@ -535,7 +535,7 @@
     createChat({
       // Point to the Worker, not directly to n8n
       webhookUrl: 'https://n8n-chat.kuibin.workers.dev',
-      enableStreaming: true,
+      enableStreaming: false,
       webhookConfig: {
         method: 'POST'
         // no Authorization header needed here —
