@@ -531,26 +531,15 @@
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-  async function getToken() {
-    const res = await fetch('https://n8n-chat.kuibin.workers.dev/api/token', {
-      method: 'GET',
-      // no credentials; CORS is handled by the Worker
-    });
-    const { token } = await res.json();
-    return token;
-  }
-
   async function boot() {
-    const token = await getToken();
-
     createChat({
-      webhookUrl: 'https://n8n.linsnode.com/webhook/e104e40e-6134-4825-a6f0-8a646d882662/chat',
-      enableStreaming: false, // if you enabled streaming in Chat Trigger
+      // Point to the Worker, not directly to n8n
+      webhookUrl: 'https://n8n-chat.kuibin.workers.dev',
+      enableStreaming: true,
       webhookConfig: {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${token}`
-        }
+        method: 'POST'
+        // no Authorization header needed here —
+        // the Worker injects Basic Auth before forwarding to n8n
       },
       // target: '#n8n-chat', // optional mount point
       // mode: 'window'
@@ -559,6 +548,7 @@
 
   boot();
 </script>
+
 
 
 
