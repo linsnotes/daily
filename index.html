@@ -531,23 +531,54 @@
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
+  const TOKEN_ENDPOINT = 'https://n8n.kuibin.workers.dev/api/token';
+  const N8N_WEBHOOK_URL = 'https://n8n.linsnode.com/webhook/e104e40e-6134-4825-a6f0-8a646d882662/chat';
+
+  async function getToken() {
+    const res = await fetch(TOKEN_ENDPOINT, {
+      method: 'POST',
+      // no body required; Worker uses the Origin header for allowlist + binding
+    });
+
+    if (!res.ok) {
+      const msg = await res.text().catch(() => res.statusText);
+      throw new Error(`Token request failed: ${res.status} ${msg}`);
+    }
+
+    const { token } = await res.json();
+    if (!token) throw new Error('No token returned');
+    return token;
+  }
+
   async function boot() {
+    let token;
+    try {
+      token = await getToken();
+    } catch (err) {
+      console.error(err);
+      // You could show a user-friendly toast/snackbar here
+      return;
+    }
+
+    // Initialize n8n chat
     createChat({
-      // Point to the Worker, not directly to n8n
-      webhookUrl: 'https://n8n-chat.kuibin.workers.dev',
-      enableStreaming: false,
+      webhookUrl: N8N_WEBHOOK_URL,
+      enableStreaming: false, // set to true only if your Chat Trigger streams
       webhookConfig: {
-        method: 'POST'
-        // no Authorization header needed here —
-        // the Worker injects Basic Auth before forwarding to n8n
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        }
       },
-      // target: '#n8n-chat', // optional mount point
+      // target: '#n8n-chat', // optional custom mount
       // mode: 'window'
     });
   }
 
   boot();
 </script>
+
 
 
 
