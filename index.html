@@ -526,14 +526,44 @@
       }
     });
   </script>
+
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 <script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-	createChat({
-		webhookUrl: 'https://n8n.linsnode.com/webhook/e104e40e-6134-4825-a6f0-8a646d882662/chat'
-	});
+  async function getToken() {
+    const res = await fetch('https://n8n.kuibin.workers.dev/api/token', {
+      method: 'GET',
+      // no credentials; CORS is handled by the Worker
+    });
+    const { token } = await res.json();
+    return token;
+  }
+
+  async function boot() {
+    const token = await getToken();
+
+    createChat({
+      webhookUrl: 'https://n8n.linsnode.com/webhook/e104e40e-6134-4825-a6f0-8a646d882662/chat',
+      enableStreaming: true, // if you enabled streaming in Chat Trigger
+      webhookConfig: {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      },
+      // target: '#n8n-chat', // optional mount point
+      // mode: 'window'
+    });
+  }
+
+  boot();
 </script>
+
+
+
+
+	
   
 </body>
 </html>
